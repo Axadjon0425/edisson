@@ -1,0 +1,1290 @@
+@media(max-width:1270px){
+    #Choose .chooseRow .chooseBlockOne{
+      
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        padding: 0 20px 20px 20px;
+    }
+    #Choose .chooseRow .chooseBlockTwo{
+      
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        padding: 0 20px 20px 20px;
+    }
+    #Choose .chooseRow .chooseBlockThree{
+      
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        padding: 0 20px 20px 20px;
+    }
+    #Choose .chooseRow .chooseBlockOne  .icon{
+        transform: translateY(-55px);
+    }
+    #Choose .chooseRow .chooseBlockTwo  .icon{
+        transform: translateY(-50px);
+    }
+    #Choose .chooseRow .chooseBlockThree  .icon{
+        transform: translateY(-50px);
+    }
+}
+@media(max-width:1200px){
+    #LatestBlog .container .latestBlogRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #LatestBlog .container .latestBlogRow .latestBlog_Block:nth-child(1){
+        margin-right: 10px;
+    }
+    #Staff .container .StaffRow .StaffBlock{
+        max-width: 200px;
+        width: 100%;
+        background: white;
+    }
+    #Staff .container .StaffRow .StaffBlock .img .social{
+      
+        max-width: 160px;
+        width: 100%;
+        height: 160px;
+    }
+}
+@media(max-width:1130px){
+    #Company .container .companyRow .companyBlockOne{
+        max-width: 200px;
+        padding: 0 10px;
+    }
+    #Company .container .companyRow .companyBlockTwo{
+        max-width: 200px;
+        height: 133px;
+    }
+    #Company .container .companyRow .companyBlockThree{
+        max-width: 200px;
+        height: 133px;
+    }
+    #Company .container .companyRow .companyBlockFour{
+        max-width: 200px;
+        height: 133px;
+    }
+    #Company .container .companyRow img{
+        max-width: 200px;
+    }
+    #Company .container .companyRow  .title{
+       height: 133px;
+    }
+    
+    #Company .container .companyRow .companyBlockOne h3{
+        font-size: 20px;
+    }
+    #Company .container .companyRow .companyBlockOne p{
+        font-size: 13px;
+    }
+}
+@media(max-width:1110px){
+    #weAre .WeAre_Row .weAre_blockOne{
+      
+        max-width: 500px;
+        width: 100%;
+        height: 300px;
+        background: #f4f4f4;
+        padding: 20px 20px;
+    }
+    #weAre .WeAre_Row .weAre_blockTwo img{
+        width: 550px;
+        height: 350px;
+    }
+    #Featured .container .featuredRow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 20px 0 20px;
+    }
+}
+@media(max-width:1090px){
+    #AboutChoose .AboutChooseRow {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:1059px){
+    #AboutChoose .AboutChooseRow .chooseBlockFour{
+        margin-top: 70px;
+    }
+}
+@media(max-width:1024px){
+    #caruselTwo .caruselTwo{
+        max-width: 700px;
+        width: 100%;
+    }
+}
+@media(max-width:995px){
+    #Footer .container .FooterRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       flex-wrap: wrap;
+    }
+    #Footer .container .FooterRow .FooterBoxThree{
+        margin-top: 30px;
+    }
+    #Footer .container .FooterRow .FooterBoxFour{
+        margin-top: 50px;
+    }
+}
+@media(max-width:992px){
+    #LatestBlog .container .latestBlogRow{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        }
+    #LatestBlog .container .latestBlogRow .latestBlog_Block{
+        max-width: 100%;
+    }
+    #LatestBlog .container .latestBlogRow .latestBlog_Block .img{
+        position: relative;
+        max-width: 768px;
+        height: auto;
+        overflow: hidden !important;
+    }
+    #LatestBlog .container .latestBlogRow .latestBlog_Block .img div{
+        max-width: 100%;
+        height: 100%;
+    }
+    #LatestBlog .container .latestBlogRow .latestBlog_Block .img img{
+        max-width: 100% !important;
+        height: auto;
+    }
+}
+@media(max-width:991px){
+    .header_right {
+        display: none;
+    }
+    #header{
+        position: fixed;
+        height: 100px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
+    }
+    .navbar{
+        display: none;
+        
+    }
+    .fa-bars{
+        display: block;
+    }
+    #weAre .WeAre_Row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #weAre .WeAre_Row .weAre_blockOne{
+      
+        max-width: 1000px;
+        width: 100%;
+        height: auto;
+        background: #f4f4f4;
+        padding: 20px 20px;
+    }
+    #weAre .WeAre_Row .weAre_blockTwo img{
+        width: 100%;
+        height: auto;
+    }
+    #AboutUs .container .AboutUsTitle ul{
+        width: 15%;
+    }
+    #AboutUs{
+        margin-top: 100px;
+    }
+    #Staff .container .StaffRow{
+        flex-wrap: wrap;
+    }
+    #Staff .container .StaffRow .StaffBlock{
+        max-width: 100%;
+        width: 100%;
+        background: white;
+        margin-top: 50px;
+    }
+    #Staff .container .StaffRow .StaffBlock .img .social{
+       
+        max-width: 85%;
+        width: 100%;
+        height: 86%;
+        padding-left: 20px;
+       
+    }
+}
+@media(max-width:980px){
+    .chooseRow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #Choose .chooseRow .chooseBlockOne{
+        max-width: 900px;
+        width: 100%;
+        height: auto;
+        padding: 0 20px 20px 20px;
+    }
+    #Choose .chooseRow .chooseBlockTwo{
+        margin-top: 100px;
+        max-width: 900px;
+        width: 100%;
+        height: auto;
+        padding: 0 20px 20px 20px;
+    }
+    #Choose .chooseRow .chooseBlockThree{
+        margin-top: 100px;
+        max-width: 900px;
+        width: 100%;
+        height: auto;
+        padding: 0 20px 20px 20px;
+    }
+}
+@media(max-width:935px){
+    #caruselTwo .caruselTwo{
+        max-width: 600px;
+        width: 100%;
+    }
+}
+@media(max-width:900px){
+    #MultiBrand{
+        padding: 0;
+    }
+    #MultiBrand .container .MultiBrandRow{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 30px 0;
+    }
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_One{
+       max-width: 800px;
+
+       padding: 0;
+    }
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_Two{
+       max-width: 100%;
+    }
+}
+@media(max-width:870px){
+    #Company .container .companyRow{
+        flex-wrap: wrap;
+    }
+    #Company .container .companyRow .companyBlockOne{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    #Company .container .companyRow .companyBlockTwo{
+        display: block;
+        max-width: 100%;
+        padding: 0 ;
+        height: auto;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    #Company .container .companyRow .companyBlockThree{
+        display: block;
+        max-width: 100%;
+        padding: 0 ;
+        height: auto;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    #Company .container .companyRow .companyBlockFour{
+        display: block;
+        max-width: 100%;
+        padding: 0 ;
+        height: auto;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    #Company .container .companyRow img{
+        max-width: 100%;
+        
+    }
+    #Company .container .companyRow  .title{
+       height: 100%;
+    }
+    
+    #Company .container .companyRow .companyBlockOne h3{
+        font-size: 30px;
+    }
+    #Company .container .companyRow .companyBlockOne p{
+        font-size: 15px;
+    }
+}
+@media(max-width:826px){
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_One{
+       max-width: 600px;
+       padding: 0 20px;
+    }
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_Two{
+        padding: 30px 15px;
+        
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockFour {
+        margin-top: 20px;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockOne{
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockTwo{
+        max-width: 100%;
+        padding-bottom: 20px;
+        margin-top: 70px;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockThree{
+        max-width: 100%;
+        padding-bottom: 20px;
+        margin-top: 70px;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockFour{
+        max-width: 100%;
+        padding-bottom: 20px;
+        margin-top: 70px;
+    }
+}
+@media(max-width:808px){
+        #Featured .container .featuredRow img{
+            max-width: 100%;
+            height: auto;
+        }
+        #Featured .container .featuredRow .featuredBlockOne{
+            max-width: 100%;
+            height: 400px;     
+    }
+        #Featured .container .featuredRow .featuredBlockOne .div{
+            width: 100%;
+            height: 400px;
+            padding: 40px 0 0 60px;
+            left: -1000px;
+            
+        }
+    
+        #Featured .container .featuredRow .featuredBlockTwo{
+            max-width: 100%;
+            height: 400px;     
+    
+    }
+        #Featured .container .featuredRow .featuredBlockTwo .div{
+            width: 100%;
+            height: 400px;
+            padding: 40px 0 0 60px;
+            left: -1000px;
+            
+    }
+    
+    #Featured .container .featuredRow .featuredBlockThree{
+        max-width: 100%;
+        height: 400px;     
+    }
+    #Featured .container .featuredRow .featuredBlockThree .div{
+        width: 100%;
+        height: 400px;
+        padding: 40px 0 0 60px;
+        left: -1000px;
+        
+    }
+    #Featured .container .featuredRow .featuredBlockFour{
+        max-width: 100%;
+        height: 400px;     
+    }
+    #Featured .container .featuredRow .featuredBlockFour .div{
+        width: 100%;
+        height: 400px;
+        padding: 40px 0 0 60px;
+        left: -1000px;
+        
+    }
+    
+    #Featured .container .featuredRow .featuredBlockFive{
+        max-width: 100%;
+        height: 400px;     
+    }
+    #Featured .container .featuredRow .featuredBlockFive .div{
+        width: 100%;
+        height: 400px;
+        padding: 40px 0 0 60px;
+        left: -1000px;
+        
+    }
+    
+    #Featured .container .featuredRow .featuredBlockSix{
+        max-width: 100%;
+        height: 400px;     
+    }
+    #Featured .container .featuredRow .featuredBlockSix .div{
+        width: 100%;
+        height: 400px;
+        padding: 40px 0 0 60px;
+        left: -1000px;
+        
+    }
+    
+    }
+@media(max-width:800px){
+    .carusel h1{
+        font-size: 40px;
+    }
+    .carusel p{
+        font-size: 15px;
+    }
+    #OurServices .container .OurServices_Row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        overflow: hidden !important;
+    }
+    #OurServices .container .OurServices_Row img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockOne{
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        padding-bottom: 10px;
+        overflow: hidden !important;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockOne div{
+        position: absolute;
+        max-width: 0px;
+        width: 100%;
+        height: 0px;
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.35s ease 0s;
+    }
+    
+    #OurServices .container .OurServices_Row .OurServices_BlockTwo{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        padding-bottom: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockTwo div{
+        position: absolute;
+        max-width: 0px;
+        width: 100%;
+        height: 0px;
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.35s ease 0s;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockThree{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        padding-bottom: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockThree div{
+        position: absolute;
+        max-width: 0px;
+        width: 100%;
+        height: 0px;
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.35s ease 0s;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockFour{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        padding-bottom: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockFour div{
+        position: absolute;
+        max-width: 0px;
+        width: 100%;
+        height: 0px;
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.35s ease 0s;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockFive{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        padding-bottom: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockFive div{
+        position: absolute;
+        max-width: 0px;
+        width: 100%;
+        height: 0px;
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.35s ease 0s;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockSix{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        padding-bottom: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockSix div{
+        position: absolute;
+        max-width: 0px;
+        width: 100%;
+        height: 0px;
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.35s ease 0s;
+    }
+    #contact .container .ContactRow{
+        flex-direction: column;
+    }
+    #contact .container .ContactRow .ContactForm{
+        max-width: 100%;
+    }
+    #contact .container .ContactRow .ContactInfo{
+        max-width: 100%;
+    }
+}
+@media(max-width:770px){
+    #Footer .container{
+       max-width: 100%;
+    }
+    #Footer .container .FooterRow .FooterBoxOne{
+        max-width: 100%;
+    }
+    #Footer .container .FooterRow .FooterBoxTwo{
+        margin: 0;
+        max-width: 100%;
+    }
+    #Footer .container .FooterRow .FooterBoxThree{
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    #Footer .container .FooterRow .FooterBoxFour{
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    #Footer .container .FooterRow .FooterBoxOne .social ul {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #Footer .container .FooterRow .FooterBoxFour .contact ul li {
+        text-align: left;
+    }
+}
+@media(max-width:768px){
+    .mobilNav{
+        max-width: 600px;
+        width: 100%;
+    }
+}
+@media(max-width:767px){
+    #AboutUs .container .AboutUsTitle ul{
+        width: 25%;
+    }
+}
+@media(max-width:765px){
+    #AboutUs .container .AboutUsTitle{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:700px){
+    .mobilNav{
+        max-width: 500px;
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    #Featured .container .featuredRow .featuredBlockOne{
+        height: auto;     
+} 
+    #Featured .container .featuredRow .featuredBlockTwo{
+        height: auto;     
+    }
+    #Featured .container .featuredRow .featuredBlockThree{
+        height: auto;     
+    }
+    #Featured .container .featuredRow .featuredBlockFour{
+        height: auto;     
+    }
+    #Featured .container .featuredRow .featuredBlockFive{
+        height: auto;     
+    }
+    #Featured .container .featuredRow .featuredBlockSix{
+        height: auto;     
+    }
+    #caruselTwo .caruselTwo{
+        max-width: 400px;
+        width: 100%;
+    }
+}
+@media(max-width:560px){
+    #counter .container{
+    display: flex;
+    justify-content: space-between !important;
+    flex-direction: column;
+    align-items: center;
+    }
+    #counter .container .box{
+      margin-top: 50px;
+    }
+    #counter .container .box:nth-child(1){
+        margin-top: 0;
+    }
+     #AboutCounter .container{
+    display: flex;
+    justify-content: space-between !important;
+    flex-direction: column;
+    align-items: center;
+    }
+    #AboutCounter .container .box{
+      margin-top: 50px;
+    }
+    #AboutCounter .container .box:nth-child(1){
+        margin-top: 0;
+    }
+}
+@media(max-width:530px){
+    .mobilNav{
+        max-width: 400px;
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    #Featured .container .featuredRow .featuredBlockOne{
+        height: 200px;     
+} 
+    #Featured .container .featuredRow .featuredBlockTwo{
+        height: 200px;     
+    }
+    #Featured .container .featuredRow .featuredBlockThree{
+        height: 200px;     
+    }
+    #Featured .container .featuredRow .featuredBlockFour{
+        height: 200px;     
+    }
+    #Featured .container .featuredRow .featuredBlockFive{
+        height: 200px;     
+    }
+    #Featured .container .featuredRow .featuredBlockSix{
+        height: 200px;     
+    }
+    #Staff .container .StaffTitle h3::after {
+        width: 10%;
+
+    }
+}
+@media (max-width:480px) {
+    #caruselTwo .caruselTwo{
+        max-width: 170px;
+        width: 100%;
+    }
+}
+@media(max-width:460px){
+    #Footer .container .FooterRow .FooterBoxOne .social ul {
+        width: 50%;
+    }
+}
+@media(max-width:458px){
+    #AboutUs .container .AboutUsTitle ul{
+        width: 30%;
+    }
+}
+@media(max-width:440px){
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_One h3:nth-child(2) {
+        font-size: 38px;
+        
+    }
+}
+@media(max-width:430px){
+    .mobilNav{
+        max-width: 300px;
+        width: 100%;
+    }
+    #weAre .WeAre_Row .weAre_blockOne a{
+       font-size: 12px;
+        padding: 10px 10px;
+        margin-top: 50px;
+        opacity: .9;
+    }
+}
+@media(max-width:390px){
+    #AboutUs .container .AboutUsTitle ul{
+        width: 40%;
+    }
+}
+@media(max-width:360px){
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_One h3 {
+        font-size: 22px;
+    }
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_One h3:nth-child(2) {
+        font-size: 30px;
+        
+    }
+}
+@media(max-width:350px){
+    .carusel h1{
+        font-size: 30px;
+    }
+    #Featured .container .featuredRow .featuredBlockOne .div{
+        padding: 20px 0 0 30px;
+    }
+    #Featured .container .featuredRow .featuredBlockTwo .div{
+        padding: 20px 0 0 30px;
+    }
+    #Featured .container .featuredRow .featuredBlockThree .div{
+        padding: 20px 0 0 30px;
+    }
+    #Featured .container .featuredRow .featuredBlockFour .div{
+        padding: 20px 0 0 30px;
+    }
+    #Featured .container .featuredRow .featuredBlockFive .div{
+        padding: 20px 0 0 30px;
+    }
+    #Featured .container .featuredRow .featuredBlockSix .div{
+        padding: 20px 0 0 30px;
+    }
+
+}
+@media(max-width:345px){
+    #LatestBlog .container .latestBlogRow .latestBlog_Block .text #aTwo {
+        font-size: 15px;
+    }
+    #LatestBlog .container .latestBlogRow .latestBlog_Block .text p {
+        font-size: 12px;
+    }
+}
+@media(max-width:330px){
+    .mobilNav{
+        max-width: 200px;
+        width: 100%;
+    }
+    #Featured .container .featuredRow .featuredBlockOne{
+        height: 100px;     
+} 
+    #Featured .container .featuredRow .featuredBlockTwo{
+        height: 100px;     
+    }
+    #Featured .container .featuredRow .featuredBlockThree{
+        height: 100px;     
+    }
+    #Featured .container .featuredRow .featuredBlockFour{
+        height: 100px;     
+    }
+    #Featured .container .featuredRow .featuredBlockFive{
+        height: 100px;     
+    }
+    #Featured .container .featuredRow .featuredBlockSix{
+        height: 100px;     
+    }
+}
+@media(max-width:315px){
+    #Company .container .companyRow .companyBlockOne h3 {
+        font-size: 20px;
+    }
+    #Company .container .companyRow .companyBlockOne p {
+        font-size: 13px;
+    }
+}
+@media(max-width:310px){
+    #OurServices .container .OurServices_Row .OurServices_BlockOne a{
+        color: rgba(0, 0, 0, 0.856);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockTwo a{
+        color: rgba(0, 0, 0, 0.856);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockThree a{
+        color: rgba(0, 0, 0, 0.856);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockFour a{
+        color: rgba(0, 0, 0, 0.856);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockFive a{
+        color: rgba(0, 0, 0, 0.856);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockSix a{
+        color: rgba(0, 0, 0, 0.856);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockOne #a{
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockTwo #a{
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockThree #a{
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockFour #a{
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockFive #a{
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    #OurServices .container .OurServices_Row .OurServices_BlockSix #a{
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    
+}
+@media(max-width:309px){
+    #AboutUs .container .AboutUsTitle ul{
+        width: 50%;
+    }
+}
+@media(max-width:300px){
+    #LatestBlog .container .latestBlogTitle h3 {
+        font-size: 20px;
+    }
+    #LatestBlog .container .latestBlogTitle h3::after {
+        width: 10%;
+    }
+    #Staff .container .StaffRow .StaffBlock .title p {
+        font-size: 12px;
+    }
+    #Staff .container .StaffTitle h3 {
+        font-size: 17px;
+    }
+    #Staff .container .StaffTitle p {
+        font-size: 12px;
+    }
+}
+@media(max-width:280px){
+    #Footer .container .FooterRow .FooterBoxOne .social ul {
+        width: 70%;
+    }
+}
+@media(max-width:276px){
+    #contact .container .ContactRow .ContactForm h3 {
+        font-size: 18px;
+    }
+    #contact .container .ContactRow .ContactForm form input{
+        font-size: 12px;
+    }
+    #contact .container .ContactRow .ContactForm form textarea{
+        font-size: 12px;
+        height: 80px;
+    }
+    #contact .container .ContactRow .ContactForm form .btn-primary{
+        font-size: 12px;
+        max-width: 102px;
+        width: 100%;
+        height: 40px;
+        padding: 0;
+    }
+    #contact .container .ContactRow .ContactInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom:50px;
+        margin-right: 20px;
+        padding: 0;
+    }
+    #contact .container .ContactRow .ContactInfo h3 {
+        font-size: 18px;
+    }
+    #contact .container .ContactRow .ContactInfo p {
+       font-size: 12px;
+    }
+    
+    #contact .container .ContactRow .ContactInfo ul li {
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    #contact .container .ContactRow .ContactInfo ul span{
+        margin-right: 10px !important;
+    }
+}
+@media(max-width:260px){
+    #Footer .container .FooterRow .FooterBoxFour .contact ul li {
+        font-size: 12px;
+    }
+    #Footer .container .FooterRow .FooterBoxThree .newsOne{
+        margin-bottom: 20px;
+    }
+    #Footer .container .FooterRow .FooterBoxThree img {
+        max-width: 55px;
+        width: 100%;
+        height: 55px;
+    }
+    #Footer .container .FooterRow .FooterBoxThree .text a{
+        font-size: 12px !important;
+    }
+    #AboutUs .container .AboutUsTitle h1 {
+       font-size: 22px;
+    }
+    #AboutUs .container .AboutUsTitle ul{
+        width: 60%;
+    }
+}
+@media(max-width:250px){
+    #AboutChoose .AboutChooseRow p {
+        font-size: 13px;
+        text-align: center;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockOne  .icon{
+        max-width: 80px;
+        width: 100%;
+        height: 80px;
+        transform: translateY(-35px);
+    }
+    #AboutChoose .AboutChooseRow .icon .fa-wrench {
+        font-size: 38px;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockTwo  .icon{
+        max-width: 80px;
+        width: 100%;
+        height: 80px;
+        transform: translateY(-35px);
+    }
+    #AboutChoose .AboutChooseRow .icon .fa-cog {
+        font-size: 38px;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockThree  .icon{
+        max-width: 80px;
+        width: 100%;
+        height: 80px;
+        transform: translateY(-35px);
+    }
+    #AboutChoose .AboutChooseRow .icon .fa-wrench {
+        font-size: 38px;
+    }
+}
+@media(max-width:245px){
+    #Featured .container .featuredRow h4{
+        font-size: 10px;
+    }
+    #Featured .container .featuredRow a{
+        font-size: 10px;
+        padding: 5px 15px;
+        transition: all .35s;
+    }
+    #Company .container .companyRow .title h4 {
+        font-size: 14px;
+    }
+    #Company .container .companyRow .title p {
+        font-size: 12px;
+    }
+}
+@media(max-width:230px){
+    .mobilNav{
+        max-width: 150px;
+        width: 100%;
+    }
+    .carusel h1{
+        font-size: 25px;
+    }
+    .carusel p{
+        font-size: 13px;
+    }
+    .carusel .CaruselText{
+      
+        height: 160px;
+    }
+    .carusel a{
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 500;
+        transform: translateY(50px);
+    }
+    #AboutUs .container .AboutUsTitle ul{
+        width: 70%;
+    }
+}
+@media(max-width:225px){
+    #AboutChoose .AboutChooseRow .chooseBlockOne  .icon{
+        max-width: 60px;
+        width: 100%;
+        height: 60px;
+        transform: translateY(-30px);
+    }
+    #AboutChoose .AboutChooseRow .icon .fa-wrench {
+        font-size: 28px !important;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockTwo  .icon{
+        max-width: 60px;
+        width: 100%;
+        height: 60px;
+        transform: translateY(-30px);
+    }
+    #AboutChoose .AboutChooseRow .icon .fa-cog {
+        font-size: 28px;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockThree  .icon{
+        max-width: 60px;
+        width: 100%;
+        height: 60px;
+        transform: translateY(-30px);
+    }
+    #AboutChoose .AboutChooseRow .icon .fa-history  {
+        font-size: 28px;
+    }
+    #AboutChoose .AboutChooseRow .chooseBlockFour  .icon{
+        max-width: 60px;
+        width: 100%;
+        height: 60px;
+        transform: translateY(-30px);
+    }
+    #AboutChoose .AboutChooseRow .icon .fa-heart  {
+        font-size: 28px;
+    }
+}
+@media(max-width:220px){
+    #Staff .container .StaffRow .StaffBlock .img .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Staff .container .StaffRow .StaffBlock:nth-child(1) .img .social .list {
+        max-width: 120px;
+        height: 25px;
+        width: 100%;
+        bottom: 40% !important;
+    }
+     #Staff .container .StaffRow .StaffBlock:nth-child(1) .img .social .list ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #Staff .container .StaffRow .StaffBlock:nth-child(2) .img .social .list {
+        max-width: 120px;
+        height: 25px;
+        width: 100%;
+        bottom: 40% !important;
+    } #Staff .container .StaffRow .StaffBlock:nth-child(2) .img .social .list ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    } 
+    #Staff .container .StaffRow .StaffBlock:nth-child(3) .img .social .list {
+        max-width: 120px;
+        height: 25px;
+        width: 100%;
+        bottom: 50% !important;
+    } #Staff .container .StaffRow .StaffBlock:nth-child(3) .img .social .list ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    } 
+    #Staff .container .StaffRow .StaffBlock:nth-child(4) .img .social .list {
+        max-width: 120px;
+        height: 25px;
+        width: 100%;
+        bottom: 60% !important;
+    } #Staff .container .StaffRow .StaffBlock:nth-child(4) .img .social .list ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    } 
+    #Staff .container .StaffRow .StaffBlock .img .social .list ul li{
+        margin-bottom: 5px;
+    }
+    #Staff .container .StaffRow .StaffBlock .img .social .list ul li a::after {
+        display: block;
+        content: ' ';
+       
+    }
+}
+@media(max-width:210px){
+    #Featured .container .featuredRow .featuredBlockOne .div{
+        padding: 5px 0 0 10px;
+    }
+    #Featured .container .featuredRow .featuredBlockTwo .div{
+        padding: 5px 0 0 10px;
+    }
+    #Featured .container .featuredRow .featuredBlockThree .div{
+        padding: 5px 0 0 10px;
+    }
+    #Featured .container .featuredRow .featuredBlockFour .div{
+        padding: 5px 0 0 10px;
+    }
+    #Featured .container .featuredRow .featuredBlockFive .div{
+        padding: 5px 0 0 10px;
+    }
+    #Featured .container .featuredRow .featuredBlockSix .div{
+        padding: 5px 0 0 10px;
+    }
+}
+@media(max-width:202px){
+    #AboutUs .container .AboutUsTitle ul{
+        width: 80%;
+    }
+}
+@media(max-width:200px){
+    #Choose .chooseRow .chooseBlockOne  .icon{
+        max-width: 80px;
+        width: 100%;
+        height: 80px;
+        transform: translateY(-45px);
+    }
+    #Choose .chooseRow .chooseBlockTwo  .icon{
+        max-width: 80px;
+        width: 100%;
+        height: 80px;
+        transform: translateY(-45px);
+    }
+    #Choose .chooseRow .chooseBlockThree  .icon{
+        max-width: 80px;
+        width: 100%;
+        height: 80px;
+        transform: translateY(-45px);
+    }
+    #Choose .chooseRow  .icon .fa-money-bill{
+        font-size: 38px;
+    }
+    #Choose .chooseRow  .icon .fa-wrench{
+        font-size: 38px;
+    }
+    #Choose .chooseRow  .icon .fa-calendar{
+        font-size: 38px;
+}
+#OurServices .container .OurServices_Row .OurServices_BlockOne #a{
+    padding: 10px 10px;
+}
+#OurServices .container .OurServices_Row .OurServices_BlockTwo #a{
+     padding: 10px 10px;
+}
+#OurServices .container .OurServices_Row .OurServices_BlockThree #a{
+     padding: 10px 10px;
+}
+#OurServices .container .OurServices_Row .OurServices_BlockFour #a{
+     padding: 10px 10px;
+}
+#OurServices .container .OurServices_Row .OurServices_BlockFive #a{
+     padding: 10px 10px;
+}
+#OurServices .container .OurServices_Row .OurServices_BlockSix #a{
+     padding: 10px 10px;
+}
+#AboutChoose .AboutChooseRow .chooseBlockOne{
+    padding: 0 10px;
+}
+#AboutChoose .AboutChooseRow .chooseBlockTwo{
+    padding: 0 10px;
+}
+#AboutChoose .AboutChooseRow .chooseBlockThree{
+    padding: 0 10px;
+}
+#AboutChoose .AboutChooseRow .chooseBlockFour{
+    padding: 0 10px;
+}
+#AboutChoose .AboutChooseRow .chooseBlockOne  .icon{
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    transform: translateY(-25px);
+}
+#AboutChoose .AboutChooseRow .icon .fa-wrench {
+    font-size: 20px !important;
+}
+#AboutChoose .AboutChooseRow .chooseBlockTwo  .icon{
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    transform: translateY(-30px);
+}
+#AboutChoose .AboutChooseRow .icon .fa-cog {
+    font-size: 20px;
+}
+#AboutChoose .AboutChooseRow .chooseBlockThree  .icon{
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    transform: translateY(-30px);
+}
+#AboutChoose .AboutChooseRow .icon .fa-history  {
+    font-size: 20px;
+}
+#AboutChoose .AboutChooseRow .chooseBlockFour  .icon{
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    transform: translateY(-30px);
+}
+#AboutChoose .AboutChooseRow .icon .fa-heart  {
+    font-size: 20px;
+}
+}
+@media(max-width:185px){
+    #AboutUs .container .AboutUsTitle h1{
+        font-size: 15px;
+        text-align: center;
+    }
+    #AboutUs .container .AboutUsTitle ul{
+        width: 100%;
+    }
+    #AboutUs .container .AboutUsTitle ul li{
+        text-align: center;
+        font-size: 10px;
+    }
+}
+@media(max-width:175px){
+    .mobilNav{
+        max-width: 100px;
+        width: 100%;
+    }
+}
+@media(max-width:170px){
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_One h3 {
+        font-size: 18px;
+    }
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_One h3:nth-child(2) {
+        font-size: 25px;
+    }
+    #MultiBrand .container .MultiBrandRow .MultiBrandBlock_Two form .btn-primary {
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        padding: 8px 10px;
+    }
+}

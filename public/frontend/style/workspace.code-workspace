@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\EIG sayt"
+		},
+		{
+			"path": "c:\\Users\\User\\Downloads\\slick-1.8.1\\slick-1.8.1\\slick"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Ostraya"
+	}
+}

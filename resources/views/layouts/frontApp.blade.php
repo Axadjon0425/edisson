@@ -33,6 +33,9 @@
 
 
 <div id="app">
+    <div class="loader">
+        <img src="{{ asset('frontend/images/spinner.gif') }}" alt="Loading..." >
+    </div>
     <!--==============================================Header==============================================-->
     <div class="container-fluid" id="header">
         <div class="container">
@@ -74,20 +77,12 @@
             <div class="mobilNav" :class="clickBars ? 'mobilActiv' : ' ' ">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li v-on:click="mobilActive" :class="mobilA ? 'active' : ' ' ">
-                            <a>Pages <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                                <div class="down-item">
-                                    <ul>
-                                        <li><a href="aboutUs.html">About us</a></li>
-                                        <li><a href="OurTeam.html">Our team</a></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="ourServeces.html">Our services</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Contact.html">Contact us</a></li>
+                        <li><a href="{{ route('index') }}">Home</a></li>
+                        <li><a href="{{ route('aboutUs') }}">About us</a></li>
+                        <li><a href="{{ route('ourTeam') }}">Our team</a></li>
+                        <li><a href="{{ route('service') }}">Our services</a></li>
+                        <li><a href="{{ route('project') }}">Projects</a></li>
+                        <li><a href="{{ route('contactUs') }}">Contact us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -100,21 +95,12 @@
             <div class="nav_wrapper">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-
-                        <li v-on:mouseover="toggle" :class="activer ? 'active' : ' ' ">
-                            <a href="#">Pages
-                                <div class="down-item">
-                                    <ul>
-                                        <li><a href="aboutUs.html">About us</a></li>
-                                        <li><a href="OurTeam.html">Our team</a></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="ourServeces.html">Our services</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Contact.html">Contact us</a></li>
+                        <li><a href="{{ route('index') }}">Home</a></li>
+                        <li><a href="{{ route('aboutUs') }}">About us</a></li>
+                        <li><a href="{{ route('ourTeam') }}">Our team</a></li>
+                        <li><a href="{{ route('service') }}">Our services</a></li>
+                        <li><a href="{{ route('project') }}">Projects</a></li>
+                        <li><a href="{{ route('contactUs') }}">Contact us</a></li>
                     </ul>
                 </nav>
 
@@ -136,91 +122,8 @@
 
     </div>
 
-{{--    @yield('content')--}}
 
-<!--=========================Carusel================================-->
-    <div class="container-fluid" id="carusel" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
-        <div class="carusel">
-
-
-            <div class="classOne">
-                <div class="CaruselText">
-                    <h1>multi-brand laptop service</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ea minus illo voluptatibus
-                        dolore architecto amet officiis, </p>
-                </div>
-                <a href="#" class="btn btn-primary">laearn more</a>
-            </div>
-
-
-            <div class="classTwo">
-                <div class="CaruselText">
-
-                    <h1>10 Yeras of exparience</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ea minus illo voluptatibus
-                        dolore architecto amet officiis, </p>
-
-                </div>
-
-                <a href="#" class="btn btn-primary">laearn more</a>
-            </div>
-
-
-            <div class="classThree">
-                <div class="CaruselText">
-
-                    <h1>Fast & Quick Fix</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ea minus illo voluptatibus
-                        dolore architecto amet officiis, dolore architecto amet officiis, </p>
-
-                </div>
-
-                <a href="#" class="btn btn-primary">laearn more</a>
-            </div>
-
-
-
-        </div>
-    </div>
-    <!--=========================Why Choose Us=========================-->
-    <div class="container-fluid" id="Choose" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
-
-        <div class="container">
-            <div class="chooseTitle">
-                <h1>Why Choose Us</h1>
-                <p>fastest repair service with best price!</p>
-            </div>
-            <div class="chooseRow">
-                <div class="chooseBlockOne">
-                    <div class="icon">
-                        <i class="fas fa-money-bill    "></i>
-                    </div>
-                    <h4>no fix no fee</h4>
-                    <p>We are so confident with our service that if we can’t fix the problem, you don’t pay. All
-                        repairs come with a 30 day guarantee.</p>
-                    <a href="#">read more <i class="fas fa-arrow-right    "></i></a>
-                </div>
-                <div class="chooseBlockTwo">
-                    <div class="icon">
-                        <i class="fa fa-wrench" aria-hidden="true"></i>
-                    </div>
-                    <h4>Quick Repair Process</h4>
-                    <p>Our company is reliable, and our work is trusted. We provide worry-free service you can always count on.</p>
-                    <a href="#">read more <i class="fas fa-arrow-right    "></i></a>
-                </div>
-                <div class="chooseBlockThree">
-                    <div class="icon">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                    </div>
-                    <h4>Quick Repair Process</h4>
-                    <p>Our company is reliable, and our work is trusted. We provide worry-free service you can always count on.</p>
-                    <a href="#">read more <i class="fas fa-arrow-right    "></i></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!--==== ====================Who We Are============================-->
+    @yield('content')
 
 
 
@@ -230,7 +133,7 @@
             <div class="FooterRow">
                 <div class="FooterBoxOne">
                     <div class="logo">
-                        <a href="#"><img src="https://iwebdc.com/demo/ostrya/wp-content/themes/ostrya/assets/images/logo-transparent.png" alt="logo"></a>
+                        <a href="#"><img src="{{ asset('frontend/images/Edisson2.png') }}" alt="logo"></a>
                     </div>
                     <div class="text">
                         <p>Being the best in our field means that we are committed to every project, we have ingenious ideas that become reality and we make every client happy.</p>
@@ -305,6 +208,13 @@
 
     <!--Vue.js==================-->
     <script src="{{asset('frontend/js/vue.js')}}"></script>
+    <script>
+    window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+
+    loader.className += " hidden";
+});
+    </script>
     <!--Wow.js==================-->
     <script src="{{asset('frontend/js/wow.min.js')}}"></script>
     <script>
@@ -341,7 +251,6 @@
             data: {
                 activer: false,
                 search: false,
-                mobilA: false,
                 clickBars: false
             },
             methods: {
@@ -357,9 +266,6 @@
                 },
                 searchActiveOff() {
                     this.search = false
-                },
-                mobilActive() {
-                    this.mobilA = !this.mobilA
                 },
                 mobilNavbar() {
                     this.clickBars = !this.clickBars

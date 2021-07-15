@@ -24,6 +24,9 @@
             color: white;
             background: #321fdb !important;
         }
+        .c-avatar{
+            background: rgb(247, 244, 244)
+        }
     </style>
 </head>
 <body class="c-app">
@@ -41,7 +44,7 @@
             <a class="c-sidebar-nav-link" href="{{ route('admin') }}">
                 <svg class="c-sidebar-nav-icon">
                     <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-home')}}"></use>
-                </svg> Bosh saxifa {{ Request::segment(1) }}
+                </svg> Bosh saxifa 
             </a>
         </li>
         <li class="c-sidebar-nav-item @if(Request::segment(1) == 'service') {{ 'active' }} @endif">
@@ -58,7 +61,7 @@
                 </svg> Mijozlar
             </a>
         </li>
-        <li class="c-sidebar-nav-item  @if(Request::segment(1) == 'ourBlog') {{ 'active' }} @endif">
+        <li class="c-sidebar-nav-item  @if(Request::segment(1) == 'our_blog') {{ 'active' }} @endif">
             <a class="c-sidebar-nav-link" href="{{ route('ourBlog.index') }}">
                 <svg class="c-sidebar-nav-icon">
                     <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-people')}}"></use>
@@ -83,36 +86,25 @@
                 <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-menu')}}"></use>
             </svg>
         </button>
-        <ul class="c-header-nav d-md-down-none">
-            <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
-            <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
-            <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
-        </ul>
         <ul class="c-header-nav ml-auto mr-4">
-            <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
-                    <svg class="c-icon">
-                        <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-bell')}}"></use>
-                    </svg></a></li>
-            <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
-                    <svg class="c-icon">
-                        <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-list-rich')}}"></use>
-                    </svg></a></li>
-            <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
-                    <svg class="c-icon">
-                        <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-envelope-open')}}"></use>
-                    </svg></a></li>
+         
             <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <div class="c-avatar">User</div>
+                    <div class="c-avatar"> 
+                     <svg class="c-icon ">
+                        <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-user')}}"></use>
+                    </svg> 
+                </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right pt-0">
                     <div class="dropdown-header bg-light py-2"><strong>Account</strong></div>
-                    <a href="" style="margin-left: 25px; text-decoration: none">
+                    <hr style="margin: 0;">
+                    <a class="dropdown-item" href="{{ route('admin.edit') }}">
                         <svg class="c-icon mr-2">
-                            <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-lock-locked')}}"></use>
-                        </svg> Lock Account
+                            <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-user-follow')}}"></use>
+                        </svg> Edit Account
                     </a>
                   
-                  
+                  <hr style="margin: 0;">
                         <a class="dropdown-item" href="{{ route('logout') }}" 
                            onclick="event.preventDefault();
                                          document.getElementById('logout-form').submit();" style="margin: 0;">
@@ -151,44 +143,19 @@
 <script src="{{asset('js/coreui-utils.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
 <script src="{{asset('DataTables/table/table.js')}}"></script>
-<script>
-    $(document).ready(function() {
-        $('#dataTable_staff').DataTable({
-            paging: false,
-            pageLength: 100,
-            lengthChange: true,
-            searching: true,
-            ordering: true,
-            info: false,
-            autoWidth: false,
-            language: {
-            search: "",
-            searchPlaceholder: " Izlash...",
-            sLengthMenu: "Кўриш _MENU_ тадан",
-            sInfo: "Ko'rish _START_ dan _END_ gacha _TOTAL_ jami",
-            emptyTable: "Ma'lumot mavjud emas",
-            }
-        });
-    });
-
-</script>
 <script src="{{ asset('js/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
-
 <script>
     $(document).ready(function () {
         bsCustomFileInput.init();
     });
 </script>
 <script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
-<script>
-     $(document).ready(function () {
-        $.mask.definitions['~'] = "[+-]";
-       $("#phone").mask("(99) 999 99-99");
-    });
-</script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 <script type="module">
     import Fancybox from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
 </script>
+
+<script src="{{ asset('js/function.js') }}"></script>
+
 </body>
 </html>

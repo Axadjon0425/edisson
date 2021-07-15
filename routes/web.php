@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\OurBlogController;
+use App\Http\Controllers\GuestController;
 use App\Models\Service;
 
 /*
@@ -23,11 +24,38 @@ use App\Models\Service;
 //    return view('welcome');
 //});
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [GuestController::class, 'index'])->name('index');
 
 Auth::routes();
+/**======================================== Guest =====================================**/
+Route::get('/index', [GuestController::class, 'index'])->name('index');
+
+Route::get('/aboutUs', [GuestController::class, 'aboutUs'])->name('aboutUs');
+
+Route::get('/ourTeam', [GuestController::class, 'ourTeam'])->name('ourTeam');
+
+Route::get('/services', [GuestController::class, 'service'])->name('service');
+
+Route::get('/project', [GuestController::class, 'project'])->name('project');
+
+Route::get('/contactUs', [GuestController::class, 'contactUs'])->name('contactUs');
+
+Route::get('/clients', [GuestController::class, 'client'])->name('client');
+
+Route::get('/OurBlogs', [GuestController::class, 'OurBlog'])->name('OurBlog');
+
+/**======================================== Guest =====================================**/
+
+
+/**======================================== Admin =====================================**/
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+
+Route::get('admin/edit', [AdminController::class, 'edit'])->name('admin.edit');
+
+Route::post('admin/password_update', [AdminController::class, 'password_update'])->name('admin.password_update');
+
+/**======================================== Admin =====================================**/
 
 
 /**======================================== Service =====================================**/

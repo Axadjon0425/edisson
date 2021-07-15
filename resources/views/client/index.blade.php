@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <div class="container">
       <h1 class="text-center">Mijozlar</h1>
-      <a href="{{ route('client.add') }}" class="btn btn-outline-primary"  style="position: absolute; z-index: 1;"><i class="far fa-plus"></i> Add</a>
+      <a href="{{ route('client.add') }}" class="btn btn-outline-primary"><i class="far fa-plus"></i> Add</a>
   
       
       <table id="dataTable_staff" class="table table-striped" style="width:100%;">

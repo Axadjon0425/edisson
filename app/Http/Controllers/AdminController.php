@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -19,7 +22,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-
+        $user = User::all();
         return view('admin.index');
     }
 
@@ -61,21 +64,57 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        $user = Auth::user();
+        $username = $user->username;
+        return view('admin.edit', compact('username'));
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update admin password
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function password_update(Request $request)
     {
-        //
+        $validator =  Validator::make($request->all(), [
+            'username'  => ['required', 'string', 'min:5'],
+            'password'  => ['required', 'min:5'],
+            'password_confirm' => ['required_with:password', 'same:password', 'min:5']
+        ]);
+
+        if (!$validator->passes())
+        {
+            // echo '<pre>';
+            // print_r($validator->errors()->toArray());
+            // echo '</pre>';
+            
+            $user = Auth::user();
+            $username = $user->username;
+
+            $error = $validator->errors()->toArray();
+            return view('admin.edit', compact('username','error'));
+        } 
+        else
+        {
+            $user = Auth::user();
+            $id = $user->id;
+
+            $s = User::findOrFail($id);
+
+            $s->fill([
+                'password' => Hash::make($request->password),
+            ]);
+            $s->save();
+
+            return redirect()->route('admin');
+            
+        }
+
+
+    
     }
 
     /**

@@ -114,56 +114,17 @@
                         </ul>
                     </div>
                     <div class="OurServices_Row">
-    
+
+                        @foreach ($service as $s)
+                            
+                        @endforeach
                         <div class="OurServices_BlockOne">
                             <div></div>
-                            <img src="{{ asset('frontend/images/service-01.jpg') }}" alt="">
-                            <a href="#" id="">Data Backup & Recovery</a>
-                            <p>We working hard to build a reputation of customer satisfaction through technical excellence and friendly staff.</p>
+                            <img src="{{ asset('upload/services/'.$s->photo ) }}" alt="">
+                            <a href="#" id="">{{ $s->name }}</a>
+                            <p>{{ $s->type }}</p>
                             <a href="#" id="a">Learn more</a>
                         </div>
-    
-                        <div class="OurServices_BlockTwo">
-                            <div></div>
-                            <img src="{{ asset('frontend/images/service-02.jpg') }}" alt="">
-                            <a href="#" id="">Laptop rapair</a>
-                            <p>We are one of the leading computer service center, we undertake desktop and laptop service with all major brands.</p>
-                            <a href="#" id="a">Learn more</a>
-                        </div>
-    
-                        <div class="OurServices_BlockThree">
-                            <div></div>
-                            <img src="{{ asset('frontend/images/service-03-600x400.jpg') }}" alt="">
-                            <a href="#" id="">Computer rapair</a>
-                            <p>We working hard to build a reputation of customer satisfaction through technical excellence and friendly staff.</p>
-                            <a href="#" id="a">Learn more</a>
-                        </div>
-    
-    
-                        <div class="OurServices_BlockFour">
-                            <div></div>
-                            <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/service-04-600x400.jpg" alt="">
-                            <a href="#" id="">Apple Products rapair</a>
-                            <p>We are one of the leading computer service center, we undertake desktop and laptop service with all major brands.</p>
-                            <a href="#" id="a">Learn more</a>
-                        </div>
-    
-                        <div class="OurServices_BlockFive">
-                            <div></div>
-                            <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/service-05-600x400.jpg " alt="">
-                            <a href="#">Hardware update</a>
-                            <p>We working hard to build a reputation of customer satisfaction through technical excellence and friendly staff.</p>
-                            <a href="#" id="a">Learn more</a>
-                        </div>
-    
-                        <div class="OurServices_BlockSix">
-                            <div></div>
-                            <img src="{{ asset('frontend/images/project-03-600x400.jpg') }}" alt="">
-                            <a href="#">Networking Issues Solving</a>
-                            <p>We are one of the leading computer service center, we undertake desktop and laptop service with all major brands.</p>
-                            <a href="#" id="a">Learn more</a>
-                        </div>
-    
                     </div>
                 
                 </div>
@@ -266,48 +227,23 @@
                         <h3>Latest from Our Blog</h3>
                     </div>
                     <div class="latestBlogRow">
+                        @foreach ($ourBlog as $o)
                         <div class="latestBlog_Block">
                             <div class="img">
                                 <div></div>
-                                <img src="{{ asset('frontend/images/post-07-768x512.jpg') }}" alt="">
+                                <img src="{{ asset('upload/our_blog/'.$o->photo) }}" alt="">
                             </div>
-                            <div class="text">
+                            <div class="text" style="width: 100%;">
                                 <div id="a">
                                     <span>in </span>
                                     <a href="#">maintenance</a>
                                 </div>
-                                <a href="#" id="aTwo">Why Your Computer Hates You</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quam justo, pretium eu tempus ut, ...</p>
+                                <a href="#" id="aTwo">{{ $o->name }}</a>
+                                <p>{{ $o->text }}</p>
                             </div>
                         </div>
-                        <div class="latestBlog_Block">
-                            <div class="img">
-                                <div></div>
-                                <img src="{{ asset('frontend/images/post-06-600x400.jpg') }}" alt="">
-                            </div>
-                            <div class="text">
-                                <div id="a">
-                                    <span>in </span>
-                                    <a href="#">Repair & Sercices</a>
-                                </div>
-                                <a href="#" id="aTwo">Easy Tips To Computer Repair</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quam justo, pretium eu tempus ut, ...</p>
-                            </div>
-                        </div>
-                        <div class="latestBlog_Block">
-                            <div class="img">
-                                <div></div>
-                                <img src="{{ asset('frontend/images/post-05-768x512.jpg') }}" alt="">
-                            </div>
-                            <div class="text">
-                                <div id="a">
-                                    <span>in </span>
-                                    <a href="#">Maintenance, Repair & Sercices</a>
-                                </div>
-                                <a href="#" id="aTwo">Computer Maintenance 2021</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quam justo, pretium eu tempus ut, ...</p>
-                            </div>
-                    </div>
+                        @endforeach
+                       
                 </div>
                 
             </div>

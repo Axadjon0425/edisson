@@ -18,16 +18,12 @@
                     <div class="form-group">
                         <label for="parol">Parol</label>
                         <input type="password" class="form-control" name="password" placeholder="Parol kiriting*">
-                        {{-- @error('password') --}}
-                        @if(isset($error['password']))
-                        <span class="text-danger" style="margin-top: -20px;">{{ $error['password'][0] }}</span>
-                        @endif
+                        <span class="text-danger error_password" style="margin-top: -20px;"></span>
+                        
                     </div>
                     <div class="form-group">
                         <input type="password" class="form-control" name="password_confirm" placeholder="Parol qayta kiriting*">
-                        @if(isset($error['password_confirm']))
-                        <span class="text-danger" style="margin-top: -20px;">{{ $error['password_confirm'][0] }}</span>
-                        @endif
+                        <span class="text-danger error_password_confirm" style="margin-top: -20px;"></span>
                     </div>
 
                     <div class="text-right" style="padding: 0;">

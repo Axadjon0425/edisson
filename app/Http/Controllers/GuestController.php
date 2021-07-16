@@ -13,7 +13,9 @@ class GuestController extends Controller
     
 public function index()
 {
-    return view('guest.index');
+    $service = Service::all();
+    $ourBlog = OurBlog::all();
+    return view('guest.index', compact('service'), compact('ourBlog') );
 }
 
 public function aboutUs()

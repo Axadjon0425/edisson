@@ -1,11 +1,13 @@
     //Loader========================================>
     window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");
+        // const loader = document.querySelector(".loader");
 
-    loader.className += " hidden";
+        // loader.className += " hidden";
     });
     //Loader========================================>
 $(document).ready(function() { 
+
+    /** */
     $('#dataTable_staff').DataTable({
         paging: false,
         pageLength: 100,
@@ -24,16 +26,16 @@ $(document).ready(function() {
     });
 
 
-    // $.mask.definitions['~'] = "[+-]";
-    $("#phone").mask("(99) 999 99-99");
-
 
     $('.js_password_update_from').on('submit', function(e) {
         e.preventDefault();
 
         let url = $(this).attr('action');
         let method = $(this).attr('method');
+        let password = $(this).find('.error_password')
+        let password_confirm = $(this).find('.error_password_confirm')
 
+        console.log(url);
         
         $.ajax({
             url: url,
@@ -41,6 +43,15 @@ $(document).ready(function() {
             data: $(this).serialize(),
             success: function(res) {
             
+                if(res.error) {
+                    password.html(res.error.password)
+                    password_confirm.html(res.error.password_confirm)
+                }
+
+                if(res.success) {
+                    console.log(111)
+                    window.location.href = 'http://127.0.0.1:8000/admin';
+                }
                 console.log(res);
         
             },
@@ -50,5 +61,9 @@ $(document).ready(function() {
 
         });
 
+    });
 
-})
+
+
+
+});

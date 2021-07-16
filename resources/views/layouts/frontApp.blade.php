@@ -77,7 +77,7 @@
             <div class="mobilNav" :class="clickBars ? 'mobilActiv' : ' ' ">
                 <nav>
                     <ul>
-                        <li><a href="{{ route('index') }}">Home</a></li>
+                        <li><a href="{{ route('index') }}" id="salom">Home</a></li>
                         <li><a href="{{ route('aboutUs') }}">About us</a></li>
                         <li><a href="{{ route('ourTeam') }}">Our team</a></li>
                         <li><a href="{{ route('service') }}">Our services</a></li>
@@ -95,12 +95,43 @@
             <div class="nav_wrapper">
                 <nav>
                     <ul>
-                        <li><a href="{{ route('index') }}">Home</a></li>
-                        <li><a href="{{ route('aboutUs') }}">About us</a></li>
-                        <li><a href="{{ route('ourTeam') }}">Our team</a></li>
-                        <li><a href="{{ route('service') }}">Our services</a></li>
-                        <li><a href="{{ route('project') }}">Projects</a></li>
-                        <li><a href="{{ route('contactUs') }}">Contact us</a></li>
+
+                        <li class="@if(Request::segment(1) == 'index') {{ 'active' }} @endif">
+
+                            <a href="{{ route('index') }}">Home</a>
+
+                        </li>
+
+                        <li class="@if(Request::segment(1) == 'aboutUs') {{ 'active' }} @endif">
+
+                            <a href="{{ route('aboutUs') }}">About us</a>
+
+                        </li>
+
+                        <li class="@if(Request::segment(1) == 'ourTeam') {{ 'active' }} @endif">
+
+                            <a href="{{ route('ourTeam') }}">Our team</a>
+
+                        </li>
+
+                        <li class="@if(Request::segment(1) == 'service') {{ 'active' }} @endif">
+
+                            <a href="{{ route('service') }}">Our services</a>
+
+                        </li>
+
+                        <li class="@if(Request::segment(1) == 'project') {{ 'active' }} @endif">
+
+                            <a href="{{ route('project') }}">Projects</a>
+
+                        </li>
+
+                        <li class="@if(Request::segment(1) == 'contactUs') {{ 'active' }} @endif">
+                            
+                            <a href="{{ route('contactUs') }}">Contact us</a>
+                            
+                        </li>
+                        
                     </ul>
                 </nav>
 

@@ -35,9 +35,7 @@
         
             <img src="{{asset('frontend/images/Edisson2.png')}}" width="128" height="46" alt="CoreUI Logo">
       
-        <svg class="c-sidebar-brand-minimized" width="46" height="46" alt="CoreUI Logo">
-            <use xlink:href="{{asset('public/icons/sprites/brand/coreui.svg#signet')}}"></use>
-        </svg>
+        
     </div>
     <ul class="c-sidebar-nav ps ps--active-y">
         <li class="c-sidebar-nav-item @if(Request::segment(1) == 'admin') {{ 'active' }} @endif">
@@ -78,9 +76,7 @@
                 <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-menu')}}"></use>
             </svg>
         </button><a class="c-header-brand d-lg-none" href="#">
-            <svg width="118" height="46" alt="CoreUI Logo">
-                <use xlink:href="{{asset('public/icons/sprites/coreui.svg#full')}}"></use>
-            </svg></a>
+           
         <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
             <svg class="c-icon c-icon-lg">
                 <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-menu')}}"></use>
@@ -150,10 +146,14 @@
     });
 </script>
 <script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-<script type="module">
-    import Fancybox from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+<script>
+    // $.mask.definitions['~'] = "[+-]";
+    $("#phone").mask("(99) 999 99-99");
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+{{-- <script type="module">
+    import Fancybox from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+</script> --}}
 
 <script src="{{ asset('js/function.js') }}"></script>
 

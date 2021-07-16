@@ -95,7 +95,8 @@ class AdminController extends Controller
             $username = $user->username;
 
             $error = $validator->errors()->toArray();
-            return view('admin.edit', compact('username','error'));
+            // return view('admin.edit', compact('username','error')); 
+            return response()->json(['error'=> $error]);
         } 
         else
         {
@@ -109,7 +110,8 @@ class AdminController extends Controller
             ]);
             $s->save();
 
-            return redirect()->route('admin');
+            // return redirect()->route('admin');
+            return response()->json(['success'=> 1]);
             
         }
 

@@ -274,8 +274,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <!--JavaScript=============-->
-    <script src="{{asset('frontend/js/javasgript.js')}}"></script>
+    <script src="{{ asset('js/function.js') }}"></script>
+    <script src="{{ asset('frontend/js/javascript.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+            $('.filter').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                const value = $(this).attr('data-filter');
 
+                if(value == 'All'){
+                    $('.OurServices_BlockOne').show();
+                }else{
+                    $('.OurServices_BlockOne').not('.'+value).hide();
+                    $('.OurServices_BlockOne').filter('.'+value).show();
+                }
+
+        })
+    })
+
+    $('.OurServices_NavUl').on('click', 'li', function () {
+            $(this).addClass('active')
+        })
+    </script>
+    
     <script>
         new Vue({
             el: '#app',

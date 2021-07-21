@@ -25,7 +25,12 @@
 
                 <div class="form-group">
                     <label for="matn">Matn</label>
-                      <input type="text" class="form-control" id="matn" name="description" placeholder="Matnni kiriting" value="{{ $service->description }}">
+                    <textarea  class="form-control "  name="description" placeholder="Matnni kiriting" cols="30" rows="10">
+
+                      {{ $service->description }}
+
+                    </textarea>
+                    
                           @error('description')
                             <span class="text-danger" style="margin-top: -20px;">Matnni kiriting!</span>
                           @enderror

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ServiceLearnMoreController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\OurBlogController;
 use App\Http\Controllers\GuestController;
@@ -72,6 +73,7 @@ Route::put('service/edit/{id}/update', [ServiceController::class, 'update'])->na
 
 Route::delete('service/destroy/{id}', [ServiceController::class, 'destroy'])->name('service.destroy');
 
+Route::get('service_learnMore/{id}', [ServiceLearnMoreController::class, 'index'])->name('service.learnMore');
 
 /**======================================== Service =====================================**/
 

@@ -13,7 +13,13 @@ class GuestController extends Controller
     
 public function index()
 {
-    $service = Service::all();
+    $service = DB::table('services AS s')
+    ->select('s.*')
+    ->where('s.type', 1)
+    // ->leftJoin('room AS r', 'r.serice_id', '=', 's.id')
+    ->orderBy('s.created_at', 'DESC')
+    ->get();
+
     $ourBlog = OurBlog::all();
     return view('guest.index', compact('service'), compact('ourBlog') );
 }

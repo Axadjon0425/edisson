@@ -60,7 +60,6 @@
                             <h4>no fix no fee</h4>
                             <p>We are so confident with our service that if we can’t fix the problem, you don’t pay. All
                                 repairs come with a 30 day guarantee.</p>
-                            <a href="#">read more <i class="fas fa-arrow-right    "></i></a>
                         </div>
                         <div class="chooseBlockTwo">
                             <div class="icon">
@@ -68,7 +67,6 @@
                             </div>
                             <h4>Quick Repair Process</h4>
                             <p>Our company is reliable, and our work is trusted. We provide worry-free service you can always count on.</p>
-                            <a href="#">read more <i class="fas fa-arrow-right    "></i></a>
                         </div>
                         <div class="chooseBlockThree">
                             <div class="icon">
@@ -76,7 +74,6 @@
                             </div>
                             <h4>Quick Repair Process</h4>
                             <p>Our company is reliable, and our work is trusted. We provide worry-free service you can always count on.</p>
-                            <a href="#">read more <i class="fas fa-arrow-right    "></i></a>
                         </div>
                     </div>
                 </div>
@@ -105,26 +102,25 @@
                         <p>We are one of the best laptop repairing service provider company in New <br> York and repair your system at your home/office at very cheapest price</p>
                     </div>
                     <div class="OurServices_Nav">
-                        <ul>
-                            <li><a href="#">All</a></li>
-                            <li><a href="#">Hardware</a></li>
-                            <li><a href="#">Laptop</a></li>
-                            <li><a href="#">Network Support</a></li>
-                            <li><a href="#">Software</a></li>
+                        <ul class="OurServices_NavUl">
+                            <li class="filter active" data-filter="All">All</li>
+                            @foreach ($service as $s)
+                            
+                            <li class="filter" data-filter="{{ $s->name }}">{{ $s->name }}</li>
+                            
+                            @endforeach   
                         </ul>
                     </div>
                     <div class="OurServices_Row">
-
                         @foreach ($service as $s)
-                            
-                        @endforeach
-                        <div class="OurServices_BlockOne">
+                        <div class="OurServices_BlockOne {{ $s->name }}">
                             <div></div>
                             <img src="{{ asset('upload/services/'.$s->photo ) }}" alt="">
                             <a href="#" id="">{{ $s->name }}</a>
-                            <p>{{ $s->type }}</p>
-                            <a href="#" id="a">Learn more</a>
+                            <p>{{ Str::limit($s->description, 50) }}</p>
+                            <a href="{{ route('service.learnMore', [$s->id]) }}" id="a">Learn more</a>
                         </div>
+                        @endforeach
                     </div>
                 
                 </div>

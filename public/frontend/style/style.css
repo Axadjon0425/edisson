@@ -340,7 +340,7 @@ font-size: 20px;
 
 #mobilNav{
     position: relative;
-    z-index: 1;
+    z-index: 99;
    
 }
 .mobilActiv{
@@ -348,6 +348,7 @@ font-size: 20px;
     width: 100%;
     top: 101px !important;
     transition: all .35s;
+    z-index: 99;
 }
 .mobilNav{
     position: fixed;
@@ -356,6 +357,7 @@ font-size: 20px;
     width: 100%;
     height: auto;
     margin: 0 auto;
+    z-index: 99;
 }
 .mobilActiv nav{
     background: white;
@@ -815,6 +817,18 @@ font-size: 20px;
     display: flex;
     list-style: none;
     margin-left: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat",sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#OurServices .container .OurServices_Nav ul .active{
+    color: #ffcc00;
+}
+#OurServices .container .OurServices_Nav ul li:hover{
+    color: #ffcc00;
 }
 #OurServices .container .OurServices_Nav ul li:nth-child(1){
     margin-left: 0;
@@ -829,17 +843,7 @@ font-size: 20px;
     color: #c0c0c0;
     font-family: "Raleway",sans-serif;
 }
-#OurServices .container .OurServices_Nav ul li a{
-    color: #333;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: "Montserrat",sans-serif;
-    text-transform: uppercase;
-}
-#OurServices .container .OurServices_Nav ul li a:hover{
-    text-decoration: none;
-    color: #ffcc00;
-}
+
 #OurServices .container .OurServices_Row{
     display: flex !important;
     justify-content: space-between;
@@ -903,262 +907,7 @@ font-size: 20px;
 #OurServices .container .OurServices_Row .OurServices_BlockOne #a:hover{
     background: #333;
 }
-#OurServices .container .OurServices_Row .OurServices_BlockTwo{
-    max-width: 360px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 100px;
-    padding-bottom: 10px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockTwo div{
-    position: absolute;
-    max-width: 360px;
-    width: 100%;
-    height: 240px;
-    background: rgba(0, 0, 0, 0);
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockTwo:hover div{
-    background: rgba(0, 0, 0, 0.377);
-}
-#OurServices .container .OurServices_Row .OurServices_BlockTwo a{
-    color: rgba(0, 0, 0, 0.719);
-    font-size: 16px;
-    font-family: "Montserrat",sans-serif;
-    text-transform: uppercase;
-    margin-left: 10px;
-    text-align: center;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockTwo a:hover{
-    text-decoration: none;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockTwo p{
-    color: rgba(0, 0, 0, 0.719);
-    text-align: start;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockTwo #a{
-    text-align: center;
-    padding: 15px 20px;
-    line-height: 1;
-    background-color: #ffcc00;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockTwo #a:hover{
-    background: #333;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockThree{
-    max-width: 360px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 100px;
-    padding-bottom: 10px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockThree div{
-    position: absolute;
-    max-width: 360px;
-    width: 100%;
-    height: 240px;
-    background: rgba(0, 0, 0, 0);
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockThree:hover div{
-    background: rgba(0, 0, 0, 0.377);
-}
-#OurServices .container .OurServices_Row .OurServices_BlockThree a{
-    color: rgba(0, 0, 0, 0.719);
-    font-size: 16px;
-    font-family: "Montserrat",sans-serif;
-    text-transform: uppercase;
-    margin-left: 10px;
-    text-align: center;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockThree a:hover{
-    text-decoration: none;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockThree p{
-    color: rgba(0, 0, 0, 0.719);
-    text-align: start;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockThree #a{
-    text-align: center;
-    padding: 15px 20px;
-    line-height: 1;
-    background-color: #ffcc00;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockThree #a:hover{
-    background: #333;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFour{
-    max-width: 360px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 100px;
-    padding-bottom: 10px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFour div{
-    position: absolute;
-    max-width: 360px;
-    width: 100%;
-    height: 240px;
-    background: rgba(0, 0, 0, 0);
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFour:hover div{
-    background: rgba(0, 0, 0, 0.377);
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFour a{
-    color: rgba(0, 0, 0, 0.719);
-    font-size: 16px;
-    font-family: "Montserrat",sans-serif;
-    text-transform: uppercase;
-    margin-left: 10px;
-    text-align: center;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFour a:hover{
-    text-decoration: none;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFour p{
-    color: rgba(0, 0, 0, 0.719);
-    text-align: start;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFour #a{
-    text-align: center;
-    padding: 15px 20px;
-    line-height: 1;
-    background-color: #ffcc00;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFour #a:hover{
-    background: #333;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFive{
-    max-width: 360px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 100px;
-    padding-bottom: 10px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFive div{
-    position: absolute;
-    max-width: 360px;
-    width: 100%;
-    height: 240px;
-    background: rgba(0, 0, 0, 0);
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFive:hover div{
-    background: rgba(0, 0, 0, 0.377);
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFive a{
-    color: rgba(0, 0, 0, 0.719);
-    font-size: 16px;
-    font-family: "Montserrat",sans-serif;
-    text-transform: uppercase;
-    margin-left: 10px;
-    text-align: center;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFive a:hover{
-    text-decoration: none;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFive p{
-    color: rgba(0, 0, 0, 0.719);
-    text-align: start;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFive #a{
-    text-align: center;
-    padding: 15px 20px;
-    line-height: 1;
-    background-color: #ffcc00;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockFive #a:hover{
-    background: #333;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockSix{
-    max-width: 360px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 100px;
-    padding-bottom: 10px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockSix div{
-    position: absolute;
-    max-width: 360px;
-    width: 100%;
-    height: 240px;
-    background: rgba(0, 0, 0, 0);
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockSix:hover div{
-    background: rgba(0, 0, 0, 0.377);
-}
-#OurServices .container .OurServices_Row .OurServices_BlockSix a{
-    color: rgba(0, 0, 0, 0.719);
-    font-size: 16px;
-    font-family: "Montserrat",sans-serif;
-    text-transform: uppercase;
-    margin-left: 10px;
-    text-align: center;
 
-}
-#OurServices .container .OurServices_Row .OurServices_BlockSix a:hover{
-    text-decoration: none;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockSix p{
-    color: rgba(0, 0, 0, 0.719);
-    text-align: start;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockSix #a{
-    text-align: center;
-    padding: 15px 20px;
-    line-height: 1;
-    background-color: #ffcc00;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.35s ease 0s;
-}
-#OurServices .container .OurServices_Row .OurServices_BlockSix #a:hover{
-    background: #333;
-}
 #Featured{
     background-image: url(../images/bg-4.jpg);
     background-position: center;
@@ -1224,6 +973,11 @@ font-size: 20px;
 }
 #Featured .container .featuredRow h4{
     font-size: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#Featured .container .featuredRow p{
+    font-size: 13px;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -2493,4 +2247,57 @@ font-size: 20px;
 #contact .container .ContactRow .ContactInfo ul li span{
     text-transform: uppercase;
     margin-right: 20px;
+}
+#LearnMore{
+    position: relative;
+}
+#LearnMore .container{
+    max-width: 1400px;
+    width: 100%;
+}
+#LearnMore .container .LearnMore{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+#LearnMore .container .LearnMore img{
+    width: 100%;
+}
+#LearnMore .container .LearnMore .learnMoreTitle{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+#LearnMore .container .LearnMore .learnMoreTitle h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+}
+#LearnMore .container .LearnMore .learnMoreTitle p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+#LearnMore .container .LearnMore  a{
+    text-align: center;
+    padding: 15px 20px;
+    line-height: 1;
+    background-color: #ffcc00;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.35s ease 0s;
+    margin-bottom: 20px;
+}
+#LearnMore .container .LearnMore  a:hover{
+    text-decoration: none;
+    background: #333;
 }

@@ -24,7 +24,7 @@
                 <img src="{{ asset('upload/services/'.$s->photo ) }}" alt="">
                 <a href="#" id="">{{ $s->name }}</a>
                 <p>{{ $s->type }}</p>
-                <a href="#" id="a">Learn more</a>
+                <a href="{{route('service.learnMore', [$s->id] )}}" id="a" >Learn more</a>
             </div>
             @endforeach
 

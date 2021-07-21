@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -108,11 +112,11 @@ class ServiceController extends Controller
             'type' => 'required',
             'photo' => 'required|image|mimes:jpeg,png,jpg'
         ]);
-        
+        unlink('upload/services/'.$img_name);
         $image = $request->file('photo');
-        $image_name = rand().'.'.$image->getClientOriginalExtension();
-        $image->move(public_path('upload/services/'), $image_name);
-        
+        $img_name = rand().'.'.$image->getClientOriginalExtension();
+        $image->move(public_path('upload/services/'), $img_name);
+       
       }else{
         $data = $request->validate([
             'name'        => 'required',

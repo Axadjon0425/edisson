@@ -156,6 +156,12 @@
 </script> --}}
 
 <script src="{{ asset('js/function.js') }}"></script>
+<script>
+     window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
 
+        loader.className += " hidden";
+    });
+</script>
 </body>
 </html>

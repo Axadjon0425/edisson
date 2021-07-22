@@ -1,43 +1,43 @@
 @extends('layouts.frontApp')
 @section('content')
             <!--=========================Carusel================================-->
-            <div class="container-fluid" id="carusel" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="carusel">
                 <div class="carusel">
     
     
                     <div class="classOne">
                         <div class="CaruselText">
-                            <h1>multi-brand laptop service</h1>
+                            <h1>Ko'p markali noutbuklar xizmati</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ea minus illo voluptatibus
                                 dolore architecto amet officiis, </p>
                         </div>
-                        <a href="#" class="btn btn-primary">laearn more</a>
+                        <a href="#" class="btn btn-primary">Batafsil ma'lumot</a>
                     </div>
     
     
                     <div class="classTwo">
                         <div class="CaruselText">
     
-                            <h1>10 Yeras of exparience</h1>
+                            <h1>10 yillik tajriba</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ea minus illo voluptatibus
                                 dolore architecto amet officiis, </p>
     
                         </div>
     
-                        <a href="#" class="btn btn-primary">laearn more</a>
+                        <a href="#" class="btn btn-primary">Batafsil ma'lumot</a>
                     </div>
     
     
                     <div class="classThree">
                         <div class="CaruselText">
     
-                            <h1>Fast & Quick Fix</h1>
+                            <h1>Tez va tezkor tuzatish</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ea minus illo voluptatibus
                                 dolore architecto amet officiis, dolore architecto amet officiis, </p>
     
                         </div>
     
-                        <a href="#" class="btn btn-primary">laearn more</a>
+                        <a href="#" class="btn btn-primary">Batafsil ma'lumot</a>
                     </div>
     
     
@@ -45,48 +45,46 @@
                 </div>
             </div>
             <!--=========================Why Choose Us=========================-->
-            <div class="container-fluid" id="Choose" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="Choose">
     
                 <div class="container">
                     <div class="chooseTitle">
-                        <h1>Why Choose Us</h1>
-                        <p>fastest repair service with best price!</p>
+                        <h1>Nega bizni tanlashingiz kerak</h1>
+                        <p>Eng tezkor ta'mirlash xizmati eng arzon narx bilan!</p>
                     </div>
                     <div class="chooseRow">
                         <div class="chooseBlockOne">
                             <div class="icon">
                                 <i class="fas fa-money-bill    "></i>
                             </div>
-                            <h4>no fix no fee</h4>
-                            <p>We are so confident with our service that if we can’t fix the problem, you don’t pay. All
-                                repairs come with a 30 day guarantee.</p>
+                            <h4>Tuzatilmasa pul olinmaydi</h4>
+                            <p>Biz o'z xizmatimizga shunchalik ishonamizki, agar biz muammoni hal qila olmasak, siz to'lamaysiz. Al ta'mirlash 30 kunlik kafolat bilan ta'minlanadi.</p>
                         </div>
                         <div class="chooseBlockTwo">
                             <div class="icon">
                                 <i class="fa fa-wrench" aria-hidden="true"></i>
                             </div>
-                            <h4>Quick Repair Process</h4>
-                            <p>Our company is reliable, and our work is trusted. We provide worry-free service you can always count on.</p>
+                            <h4>Tez ta'mirlash jarayoni</h4>
+                            <p>Bizning kompaniyamiz ishonchli va bizning ishimiz ishonchli. Siz har doim ishonishingiz mumkin bo'lgan muammosiz xizmatni taqdim etamiz.</p>
                         </div>
                         <div class="chooseBlockThree">
                             <div class="icon">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                             </div>
-                            <h4>Quick Repair Process</h4>
-                            <p>Our company is reliable, and our work is trusted. We provide worry-free service you can always count on.</p>
+                            <h4>30 kunlik kafolat</h4>
+                            <p>Bu shuni anglatadiki, agar sizda takrorlanib turadigan muammo bo'lsa, uni bepul olib keling va ta'mirlang *!</p>
                         </div>
                     </div>
                 </div>
     
             </div>
             <!--==== ====================Who We Are============================-->
-            <div class="container-fluid" id="weAre" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="weAre">
                 <div class="container">
                     <div class="WeAre_Row">
                         <div class="weAre_blockOne">
-                            <h3>who we are</h3>
-                            <p>Ostrya is an established New York based company, specialised in Computer Repairs and Services, We repair out of warranty laptops and Computer.</p>
-                            <a href="#">view services</a>
+                            <h3>Biz kimmiz</h3>
+                            <p>Edisson - Qo'qonda tashkil etilgan, Kompyuterlarni ta'mirlash va xizmat ko'rsatishga ixtisoslashgan, biz kafolatlangan noutbuklar va kompyuterlarni ta'mirlaymiz.</p>
                         </div>
                         <div class="weAre_blockTwo">
                             <img src="{{ asset('frontend/images/service-02.jpg') }}" alt="">
@@ -95,20 +93,16 @@
                 </div>
             </div>
             <!--========================Our Services===========================-->
-            <div class="container-fluid" id="OurServices" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="OurServices">
                 <div class="container">
                     <div class="OurServicesTitle">
-                        <h3>our services</h3>
-                        <p>We are one of the best laptop repairing service provider company in New <br> York and repair your system at your home/office at very cheapest price</p>
+                        <h3>Bizning xizmatlarimiz</h3>
+                        <p>Biz Qo'qondagi eng yaxshi noutbuklarni ta'mirlash bo'yicha xizmat ko'rsatuvchi kompaniyamiz va sizning uyingizda ofisingizda tizimingizni eng arzon narxlarda ta'mirlaymiz.</p>
                     </div>
                     <div class="OurServices_Nav">
                         <ul class="OurServices_NavUl">
-                            <li class="filter active" data-filter="All">All</li>
-                            @foreach ($service as $s)
-                            
-                            <li class="filter" data-filter="{{ $s->name }}">{{ $s->name }}</li>
-                            
-                            @endforeach   
+                            <li class="filter active" data-filter="All">Barchasi</li>
+                            <li class="filter" data-filter="Kompyuter">Kompyuter</li> 
                         </ul>
                     </div>
                     <div class="OurServices_Row">
@@ -118,7 +112,7 @@
                             <img src="{{ asset('upload/services/'.$s->photo ) }}" alt="">
                             <a href="#" id="">{{ $s->name }}</a>
                             <p>{{ Str::limit($s->description, 50) }}</p>
-                            <a href="{{ route('service.learnMore', [$s->id]) }}" id="a">Learn more</a>
+                            <a href="{{ route('service.learnMore', [$s->id]) }}" id="a">Batafsil ma'lumot</a>
                         </div>
                         @endforeach
                     </div>
@@ -126,11 +120,11 @@
                 </div>
             </div>
             <!--========================Featured Works=========================-->
-            <div class="container-fluid" id="Featured" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="Featured">
                 <div class="container">
                         <div class="featuredTitle">
-                            <h3>Featured Works</h3>
-                            <p>All Kinds of Service under One roof</p>
+                            <h3>Tanlangan asarlar</h3>
+                            <p>Barcha turdagi xizmatlar bitta tom ostida</p>
                         </div>
                         <div class="featuredRow">
                             <div class="featuredBlockOne">
@@ -138,8 +132,8 @@
                                     <img src="{{ asset('frontend/images/project-01-600x400.jpg') }}" alt="">
                                 </div>
                                 <div class="div">
-                                    <h4>Our project 01</h4>
-                                    <a href="#" class="btn btn-primary">view project</a>
+                                    <h4>Bizning loyihamiz 01</h4>
+                                    <a href="{{ route('project') }}" class="btn btn-primary">loyihani ko'rish</a>
                                 </div>
                             </div>
                             <div class="featuredBlockTwo">
@@ -147,8 +141,8 @@
                                     <img src="{{ asset('frontend/images/project-02-600x400.jpg') }}" alt="">
                                 </div>
                                 <div class="div">
-                                    <h4>Our project 03</h4>
-                                    <a href="#" class="btn btn-primary">view project</a>
+                                    <h4>Bizning loyihamiz 02</h4>
+                                      <a href="{{ route('project') }}" class="btn btn-primary">loyihani ko'rish</a>
                                 </div>
                             </div>
                             <div class="featuredBlockThree">
@@ -156,8 +150,8 @@
                                     <img src="{{ asset('frontend/images/project-03-600x400.jpg') }}" alt="">
                                 </div>
                                 <div class="div">
-                                    <h4>Our project 03</h4>
-                                    <a href="#" class="btn btn-primary">view project</a>
+                                    <h4>Bizning loyihamiz 03</h4>
+                                      <a href="{{ route('project') }}" class="btn btn-primary">loyihani ko'rish</a>
                                 </div>
                             </div>
                             <div class="featuredBlockFour">
@@ -165,8 +159,8 @@
                                     <img src="{{ asset('frontend/images/project-04-768x511.jpg') }}" alt="">
                                 </div>
                                 <div class="div">
-                                    <h4>Our project 04</h4>
-                                    <a href="#" class="btn btn-primary">view project</a>
+                                    <h4>Bizning loyihamiz 04</h4>
+                                      <a href="{{ route('project') }}" class="btn btn-primary">loyihani ko'rish</a>
                                 </div>
                             </div>
                             <div class="featuredBlockFive">
@@ -174,8 +168,8 @@
                                     <img src="{{ asset('frontend/images/project-05-300x200.jpg') }}" alt="">
                                 </div>
                                 <div class="div">
-                                    <h4>Our project 05</h4>
-                                    <a href="#" class="btn btn-primary">view project</a>
+                                    <h4>Bizning loyihamiz 05</h4>
+                                      <a href="{{ route('project') }}" class="btn btn-primary">loyihani ko'rish</a>
                                 </div>
                             </div>
                             <div class="featuredBlockSix">
@@ -183,44 +177,44 @@
                                     <img src="{{ asset('frontend/images/project-06-768x512.jpg') }}" alt="">
                                 </div>
                                 <div class="div">
-                                    <h4>Our project 06</h4>
-                                    <a href="#" class="btn btn-primary">view project</a>
+                                    <h4>Bizning loyihamiz 06</h4>
+                                      <a href="{{ route('project') }}" class="btn btn-primary">loyihani ko'rish</a>
                                 </div>
                             </div>
                         </div>
                 </div>
             </div>
             <!--========================Counter================================-->
-            <div class="container-fluid" id="counter" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="counter">
                 <div class="container">
                     <div class="box">
                         <div class="icon"><i class="far fa-smile"></i></i></div>
                         <div class="counter">2750</div>
-                        <div class="text">HAPPY CUSTOMERS</div>
+                        <div class="text">Baxtli mijozlar</div>
                     </div>
                     <div class="box">
                         <div class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></div>
                         <div class="counter">1250</div>
-                        <div class="text">LAPTOP REPAIRED</div>
+                        <div class="text">NOUTBUK TA'MIRLANGAN</div>
                     </div>
                     <div class="box">
                         <div class="icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
                         <div class="counter">950</div>
-                        <div class="text">COMPUTER REPAIRED</div>
+                        <div class="text">KOMPYUTER TA'MIRLANGAN</div>
                     </div>
                     <div class="box">
                         <div class="icon"><i class="fab fa-windows"></i></div>
                         <div class="counter">450</div>
-                        <div class="text">OS INSTALLED</div>
+                        <div class="text">OS O'RNATILDI</div>
                     </div>
                 </div>
                 
             </div>
             <!--========================Latest from Our Blog===================-->
-            <div class="container-fluid" id="LatestBlog" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="LatestBlog">
                 <div class="container">
                     <div class="latestBlogTitle">
-                        <h3>Latest from Our Blog</h3>
+                        <h3>Bizning blogimizdan so'nggi yangiliklar</h3>
                     </div>
                     <div class="latestBlogRow">
                         @foreach ($ourBlog as $o)
@@ -232,9 +226,9 @@
                             <div class="text" style="width: 100%;">
                                 <div id="a">
                                     <span>in </span>
-                                    <a href="#">maintenance</a>
+                                    <a>maintenance</a>
                                 </div>
-                                <a href="#" id="aTwo">{{ $o->name }}</a>
+                                <a id="aTwo">{{ $o->name }}</a>
                                 <p>{{ $o->text }}</p>
                             </div>
                         </div>
@@ -245,7 +239,7 @@
             </div>
         </div>
             <!--========================CrauselTwo=============================-->
-            <div class="container-fluid" id="caruselTwo" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="caruselTwo">
                 <div class="caruselTwo">
                     <div class="box">
                         <img src="{{ asset('frontend/images/client-01.jpg') }}" alt="img">
@@ -277,23 +271,23 @@
                 </div>
             </div>
             <!--========================Multi Brand============================-->
-            <div class="container-fluid" id="MultiBrand" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+            <div class="container-fluid" id="MultiBrand">
                 <div class="container">
                     <div class="MultiBrandRow"> 
     
                         <div class="MultiBrandBlock_One">
-                            <h3>Multi Brand</h3>
-                            <h3>Repair & Services</h3>
-                            <p>Life without our Pc’s, laptops & printers is just unimaginable! So if these are ailing with hardware or software issues and you are wondering who will fix my PC instantly Our certified experts will resolve them all. From computer repair services, laptop repair services to printer repair services Our expert shall detect all concerns and accomplish everything from software installation to motherboard repair.</p>
+                            <h3>Ko'p tovar</h3>
+                            <h3>Ta'mirlash va xizmat ko'rsatish</h3>
+                            <p>Bizning kompyuterlarimiz, noutbuklarimiz va printerlarimizsiz hayotni tasavvur qilib bo'lmaydi! Shunday qilib, agar bu apparat yoki dasturiy ta'minot bilan bog'liq muammolar bo'lsa va siz mening kompyuterimni kim darhol tuzatadi deb o'ylayotgan bo'lsangiz, bizning sertifikatlangan mutaxassislarimiz bularning barchasini hal qilishadi. Kompyuterlarni ta'mirlash, noutbuklarni ta'mirlash xizmatlaridan tortib, printerlarni ta'mirlash xizmatlariga qadar Bizning mutaxassis barcha muammolarni aniqlay oladi va dasturiy ta'minotni o'rnatishdan tortib, anakartni ta'mirlashgacha hamma narsani amalga oshiradi..</p>
                         </div>
     
                         <div class="MultiBrandBlock_Two">
-                            <h3>Get a FREE Quote</h3>
+                            <h3>BEPUL narx taklifini oling</h3>
                             <form action="">
-                                <input type="text" name="" id="" placeholder="Your Name(required)">
-                                <input type="email" name="" id="" placeholder="Your Email(required)">
-                                <textarea name="" id="" cols="45" rows="5" placeholder="Give Some Details"></textarea>
-                                <input class="btn btn-primary" type="submit" name="" id="" value="Get a Quote">
+                                <input type="text" name="" id="" placeholder="Ismingiz (majburiy)">
+                                <input type="email" name="" id="" placeholder="YSizning elektron pochtangiz (majburiy)">
+                                <textarea name="" id="" cols="45" rows="5" placeholder="Ba'zi tafsilotlarni bering"></textarea>
+                                <input class="btn btn-primary" type="submit" name="" id="" value="Iqtibos oling">
                             </form>
                        </div>
     

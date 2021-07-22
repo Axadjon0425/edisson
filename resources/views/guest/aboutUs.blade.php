@@ -1,26 +1,25 @@
 @extends('layouts.frontApp')
 @section('content')
 <!--==============================About Us==========================-->
-<div class="container-fluid" id="AboutUs" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+<div class="container-fluid" id="AboutUs">
     <div class="container">
         <div class="AboutUsTitle">
-            <h1>About Us</h1>
+            <h1>Biz haqimizda</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Bosh sahifa</a></li>
                 <li><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
-                <li>About Us</li>
+                <li>Biz haqimizda</li>
             </ul>
         </div>
     </div>
 </div>
   <!--==== ====================We are Leading Company============================-->
-<div class="container-fluid" id="weAre" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+<div class="container-fluid" id="weAre">
     <div class="container">
         <div class="WeAre_Row">
             <div class="weAre_blockOne">
-                <h3>We are Leading Company</h3>
+                <h3>Biz yetakchi kompaniyamiz</h3>
                 <p>Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer egestas. Aenean varius ex ut tortor laoreet.</p>
-                <a href="#">view services</a>
             </div>
             <div class="weAre_blockTwo">
                 <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/project-07.jpg" alt="">
@@ -29,7 +28,7 @@
     </div>
 </div>
 <!--=========================Why Choose Us=========================-->
-<div class="container-fluid" id="AboutChoose" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+<div class="container-fluid" id="AboutChoose">
 
     <div class="container">
         <div class="AboutChooseRow">
@@ -37,29 +36,29 @@
                 <div class="icon">
                     <i class="fa fa-wrench" aria-hidden="true"></i>
                 </div>
-                <h4>Honest Services</h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium dolore mque.</p>
+                <h4>Halol xizmatlar</h4>
+                <p>Sizni xatoga yo'l qo'ymaslik uchun xatolarni hal qilishda xatoliklar aniqlanadi.</p>
                 
             </div>
             <div class="chooseBlockTwo">
                 <div class="icon">
                     <i class="fas fa-cog"></i>
                 </div>
-                <h4>Quick Repair Process</h4>
+                <h4>Tez ta'mirlash jarayoni</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
             </div>
             <div class="chooseBlockThree">
                 <div class="icon">
                     <i class="fas fa-history"></i>
                 </div>
-                <h4>On time delivery</h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium dolore mque.</p>
+                <h4>O'z vaqtida etkazib berish </h4>
+                <p>Sizni xatoga yo'l qo'ymaslik uchun xatolarni hal qilishda xatoliklar aniqlanadi.</p>
             </div>
             <div class="chooseBlockFour">
                 <div class="icon">
                     <i class="far fa-heart"></i>
                 </div>
-                <h4>We are pasionate</h4>
+                <h4>Biz jonkuyarmiz</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
             </div>
         </div>
@@ -67,20 +66,20 @@
 
 </div>
 <!--=========================About Company=========================-->
-<div class="container-fluid" id="Company" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+<div class="container-fluid" id="Company">
     <div class="container">
         <hr>
         <div class="companyRow">
             <div class="companyBlockOne">
-                <h3>About Company</h3>
-                <p>We can guarantee to give you a FREE honest, friendly advice about any repairs fixes you need.</p>
+                <h3>Kompaniya haqida</h3>
+                <p>Sizga kerak bo'lgan barcha tuzatishlar haqida sizga BEPUL halol, do'stona maslahat berishga kafolat beramiz.</p>
             </div>
             <div class="companyBlockTwo">
                 <a href="#">
                     <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/service-01.jpg" alt="">
                     <div class="title">
-                        <h4>Our History</h4>
-                        <p>Leading Computer Service Company</p>
+                        <h4>Bizning tariximiz</h4>
+                        <p>Kompyuterlarga xizmat ko'rsatuvchi yetakchi kompaniya</p>
                     </div>
                 </a>
             </div>
@@ -88,8 +87,8 @@
                 <a href="#">
                     <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/service-03.jpg" alt="">
                     <div class="title">
-                        <h4>Our Mission</h4>
-                        <p>We are the Expert on this Field, Fast and Reliable Service.</p>
+                        <h4>Bizning missiyamiz</h4>
+                        <p>Biz ushbu sohadagi mutaxassismiz, tezkor va ishonchli xizmat.</p>
                     </div>
                 </a>
             </div>
@@ -97,8 +96,8 @@
                 <a href="#">
                     <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/project-05.jpg" alt="">
                     <div class="title">
-                        <h4>Expanding Goal</h4>
-                        <p>Our experts have been featured in press numerous times.</p>
+                        <h4>Maqsadni kengaytirish</h4>
+                        <p>Bizning mutaxassislarimiz matbuotda ko'p marotaba namoyish etilgan</p>
                     </div>
                 </a>
             </div>
@@ -107,27 +106,27 @@
     
 </div>
 <!--========================AboutCounter================================-->
-<div class="container-fluid" id="AboutCounter" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+<div class="container-fluid" id="AboutCounter">
     <div class="container">
         <div class="box">
             <div class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></div>
             <div class="counter">2460</div>
-            <div class="text">LAPTOP REPAIRED</div>
+            <div class="text">NOUTBUK TA'MIRLANGAN</div>
         </div>
         <div class="box">
             <div class="icon"><i class="fa fa-desktop" aria-hidden="true"></i></i></div>
             <div class="counter">1850</div>
-            <div class="text">DESKTOP REPAIRED</div>
+            <div class="text">KOMPYUTER TA'MIRLANGAN</div>
         </div>
         <div class="box">
             <div class="icon"><i class="fas fa-child"></i></div>
             <div class="counter">5200</div>
-            <div class="text">Satisfied Customers</div>
+            <div class="text">Mamnun mijozlar</div>
         </div>
         <div class="box">
             <div class="icon"><i class="fas fa-trophy"></i></div>
             <div class="counter">15</div>
-            <div class="text">Awards won</div>
+            <div class="text">Mukofotlar qo'lga kiritildi</div>
         </div>
     </div>
     
@@ -136,8 +135,8 @@
 <div class="container-fluid" id="Staff">
     <div class="container">
         <div class="StaffTitle">
-            <h3>Experienced Staff</h3>
-            <p>Our experts have been featured in press numerous times.</p>
+            <h3>Tajribali xodimlar</h3>
+            <p>Bizning mutaxassislarimiz matbuotda ko'p marotaba namoyish etilgan.</p>
         </div>
         <div class="StaffRow">
             <div class="StaffBlock">

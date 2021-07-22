@@ -32,7 +32,7 @@
 <body>
 
 
-<div id="app">
+<div id="app" style="overflow: hidden !important">
     <div class="loader">
         <img src="{{ asset('frontend/images/spinner.gif') }}" alt="Loading..." >
     </div>
@@ -42,7 +42,7 @@
             <div class="header">
                 <div class="header_wrapper">
                     <div class="header_logo">
-                        <a href="#"><img src="{{ asset('frontend/images/Edisson.png') }}" alt="logo"></a>
+                        <a href="{{ route('index') }}"><img src="{{ asset('frontend/images/Edisson.png') }}" alt="logo"></a>
                     </div>
                     <div v-on:click="mobilNavbar" class="bars">
                         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -53,19 +53,18 @@
                             <div class="header_infoLeft">
                                 <i class="fas fa-phone-alt"></i>
                                 <div class="header_text">
-                                    <small>Contact us</small>
+                                    <small>Biz bilan bog'lanish</small>
                                     <strong>(99)0067134</strong>
                                 </div>
                             </div>
                             <div class="header_infoRight">
                                 <i class="far fa-clock"></i>
                                 <div class="header_text">
-                                    <small>Working time</small>
-                                    <strong>Mon - Sat: 10:00 - 18:00</strong>
+                                    <small>Ish vaqti</small>
+                                    <strong>Du - Sha: 10:00 - 18:00</strong>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">Make An Appointment</a>
                     </div>
                 </div>
             </div>
@@ -77,12 +76,12 @@
             <div class="mobilNav" :class="clickBars ? 'mobilActiv' : ' ' ">
                 <nav>
                     <ul>
-                        <li><a href="{{ route('index') }}" id="salom">Home</a></li>
-                        <li><a href="{{ route('aboutUs') }}">About us</a></li>
-                        <li><a href="{{ route('ourTeam') }}">Our team</a></li>
-                        <li><a href="{{ route('service') }}">Our services</a></li>
-                        <li><a href="{{ route('project') }}">Projects</a></li>
-                        <li><a href="{{ route('contactUs') }}">Contact us</a></li>
+                        <li><a href="{{ route('index') }}" id="salom">Bosh sahifa</a></li>
+                        <li><a href="{{ route('aboutUs') }}">Biz haqimizda</a></li>
+                        <li><a href="{{ route('ourTeam') }}">Bizning jamoamiz</a></li>
+                        <li><a href="{{ route('service') }}">Bizning xizmatlarimiz</a></li>
+                        <li><a href="{{ route('project') }}">Loyihalar</a></li>
+                        <li><a href="{{ route('contactUs') }}">Biz bilan bog'lanish</a></li>
                     </ul>
                 </nav>
             </div>
@@ -98,53 +97,43 @@
 
                         <li class="@if(Request::segment(1) == 'index') {{ 'active' }} @endif">
 
-                            <a href="{{ route('index') }}">Home</a>
+                            <a href="{{ route('index') }}">Bosh sahifa</a>
 
                         </li>
 
                         <li class="@if(Request::segment(1) == 'aboutUs') {{ 'active' }} @endif">
 
-                            <a href="{{ route('aboutUs') }}">About us</a>
+                            <a href="{{ route('aboutUs') }}">Biz haqimizda</a>
 
                         </li>
 
                         <li class="@if(Request::segment(1) == 'ourTeam') {{ 'active' }} @endif">
 
-                            <a href="{{ route('ourTeam') }}">Our team</a>
+                            <a href="{{ route('ourTeam') }}">Bizning jamoamiz</a>
 
                         </li>
 
-                        <li class="@if(Request::segment(1) == 'service') {{ 'active' }} @endif">
+                        <li class="@if(Request::segment(1) == 'services') {{ 'active' }} @endif">
 
-                            <a href="{{ route('service') }}">Our services</a>
+                            <a href="{{ route('service') }}">Bizning xizmatlarimiz</a>
 
                         </li>
 
                         <li class="@if(Request::segment(1) == 'project') {{ 'active' }} @endif">
 
-                            <a href="{{ route('project') }}">Projects</a>
+                            <a href="{{ route('project') }}">Loyihalar</a>
 
                         </li>
 
                         <li class="@if(Request::segment(1) == 'contactUs') {{ 'active' }} @endif">
                             
-                            <a href="{{ route('contactUs') }}">Contact us</a>
+                            <a href="{{ route('contactUs') }}">Biz bilan bog'lanish</a>
                             
                         </li>
                         
                     </ul>
                 </nav>
 
-                <div class="search">
-                    <div :class="search ? 'searchActive' : ' ' " v-on:click="searchActive" id="searchIcon">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-
-                    </div>
-
-                    <div :class="search ? 'searchActive' : ' ' ">
-                        <input type="search" name="" id="" placeholder="Search...">
-
-                    </div>
                 </div>
             </div>
 
@@ -153,80 +142,41 @@
 
     </div>
 
+    <div style="overflow: hidden">
 
-    @yield('content')
+        @yield('content')
+    
+    </div>
 
 
 
     <!--========================Footer=================================-->
-    <div class="container-fluid" id="Footer" id="MultiBrand" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+    <div class="container-fluid" id="Footer" id="MultiBrand">
         <div class="container">
             <div class="FooterRow">
                 <div class="FooterBoxOne">
                     <div class="logo">
-                        <a href="#"><img src="{{ asset('frontend/images/Edisson2.png') }}" alt="logo"></a>
+                        <a href="{{ route('index') }}"><img src="{{ asset('frontend/images/Edisson2.png') }}" alt="logo"></a>
                     </div>
-                    <div class="text">
-                        <p>Being the best in our field means that we are committed to every project, we have ingenious ideas that become reality and we make every client happy.</p>
-                    </div>
+                   
                     <div class="social">
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://sq-al.facebook.com/edisson.kokand/"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://t.me/edisson_kokand"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/edisson_kokand/"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="FooterBoxTwo">
-                    <div class="title">
-                        <h3>Our Services</h3>
-                    </div>
-                    <div class="link">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Laptop Repiar</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Computer Repiar</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Cloud Services</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Hardware Update</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Apple Products Repair</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Data Backup & Recovery</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="FooterBoxThree">
-                    <div class="title">
-                        <h3>Latest news</h3>
-                    </div>
-                    <div class="news">
-                        <div class="newsOne">
-                            <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/post-07-150x150.jpg" alt="img">
-                            <div class="text">
-                                <a href="#">Why Your Computer Hates You</a>
-                                <span>Jan 14, 2021</span>
-                            </div>
-                        </div>
-                        <div class="newsTwo">
-                            <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/post-06-150x150.jpg" alt="img">
-                            <div class="text">
-                                <a href="#">Easy Tips To Computer Repair</a>
-                                <span>Jan 14, 2021</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
                 <div class="FooterBoxFour">
                     <div class="title">
-                        <h3>Contact Us</h3>
-                        <p>Ostrya is the simple and easy to use WordPress Theme. </p>
+                        <h3>Biz bilan bog'lanish</h3>
                     </div>
                     <div class="contact">
                         <ul>
                             <li><i class="fas fa-map-marker-alt"></i>   No.320, Fifth Avenue New York,br NY 90210</li>
                             <li><i class="fas fa-phone-alt"></i>  (123) 456-7890</li>
-                            <li><i class="fas fa-print"></i>  (123) 456-7777</li>
-                            <li><i class="fas fa-envelope"></i>  <a href="#">info@yourdomain.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -302,7 +252,6 @@
             el: '#app',
             data: {
                 activer: false,
-                search: false,
                 clickBars: false
             },
             methods: {
@@ -312,12 +261,6 @@
                 },
                 toggleOff() {
                     this.activer = false
-                },
-                searchActive() {
-                    this.search = true
-                },
-                searchActiveOff() {
-                    this.search = false
                 },
                 mobilNavbar() {
                     this.clickBars = !this.clickBars

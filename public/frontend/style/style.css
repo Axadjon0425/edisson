@@ -75,7 +75,7 @@ html {
     margin-left: 10px;
 }
 .header_right{
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -179,7 +179,7 @@ margin-right: 10px;
 }
 .nav_wrapper nav {
     height: 100%;
-    max-width: 700px;
+    max-width: 1000px;
     width: 100%;
 }
 .nav_wrapper nav ul{
@@ -285,52 +285,6 @@ margin-right: 10px;
     height: 0;
     background: none;
     
-}
-.search{
-    
-    width: 300px;
-    z-index: 1;
-   
-}
-#searchIcon{
-    display: flex;
-    justify-content: flex-end;
-}
-.search .fa-search{
-    visibility: visible;
-    position: relative;
-    opacity: 1;
-    z-index: 0;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-}
-.search input{
-    visibility: hidden;
-    position: absolute;
-    opacity: 0;
-    z-index: -20;
-    
-}
-
-.searchActive input{
-    visibility: visible;
-    position: relative;
-    opacity: 1;
-    z-index: 1;
-    width: 100%;
-    padding: 7px 15px;
-    border: none;
-    transition: all 0.35s ease 0s !important;
-    border: 1px solid rgba(0, 0, 0, 0.226);
-    border-radius: 2px;
-  
-}
-.searchActive .fa-search{
-    visibility: hidden;
-    position: absolute;
-    opacity: 0;
-    z-index: -20;
 }
 
 .fa-bars{
@@ -529,7 +483,7 @@ font-size: 20px;
 }
 .carusel h1{
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     text-transform: capitalize;
@@ -760,8 +714,8 @@ font-size: 20px;
     text-decoration: none;
 }
 #weAre .WeAre_Row .weAre_blockTwo img{
-    width: 650px;
-    height: 450px;
+    width: 600px;
+    height: 400px;
 }
 
 #OurServices .container{
@@ -1006,7 +960,7 @@ font-size: 20px;
     width: 360px;
     height: 240px;
     background: rgba(43, 40, 40, 0.712);
-    padding: 20px 0 0 40px;
+    padding: 20px 0 0 30px;
     left: -400px;
     transition: all .55s;
     z-index: 2;
@@ -1029,7 +983,7 @@ font-size: 20px;
     width: 360px;
     height: 240px;
     background: rgba(43, 40, 40, 0.712);
-    padding: 20px 0 0 40px;
+    padding: 20px 0 0 30px;
     left: -400px;
     transition: all .55s;
     z-index: 2;
@@ -1052,7 +1006,7 @@ font-size: 20px;
     width: 360px;
     height: 240px;
     background: rgba(43, 40, 40, 0.712);
-    padding: 20px 0 0 40px;
+    padding: 20px 0 0 30px;
     left: -400px;
     transition: all .55s;
     z-index: 2;
@@ -1075,7 +1029,7 @@ font-size: 20px;
     width: 360px;
     height: 240px;
     background: rgba(43, 40, 40, 0.712);
-    padding: 20px 0 0 40px;
+    padding: 20px 0 0 30px;
     left: -400px;
     transition: all .55s;
     z-index: 2;
@@ -1098,7 +1052,7 @@ font-size: 20px;
     width: 360px;
     height: 240px;
     background: rgba(43, 40, 40, 0.712);
-    padding: 20px 0 0 40px;
+    padding: 20px 0 0 30px;
     left: -400px;
     transition: all .55s;
     z-index: 2;
@@ -1121,7 +1075,7 @@ font-size: 20px;
     width: 360px;
     height: 240px;
     background: rgba(43, 40, 40, 0.712);
-    padding: 20px 0 0 40px;
+    padding: 20px 0 0 30px;
     left: -400px;
     transition: all .55s;
     z-index: 2;
@@ -1402,14 +1356,14 @@ font-size: 20px;
 }
 #Footer .container .FooterRow{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 #Footer .container .FooterRow .FooterBoxOne{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: 300px;
     width: 100%;
     color: #bababa;
@@ -1419,13 +1373,9 @@ font-size: 20px;
     width: 100%;
     margin-bottom: 20px;
 }
-#Footer .container .FooterRow .FooterBoxOne .logo .text p{
-    text-align: left;
-    margin-bottom: 20px;
-}
 #Footer .container .FooterRow .FooterBoxOne .social{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -1458,7 +1408,7 @@ font-size: 20px;
 #Footer .container .FooterRow .FooterBoxOne .social .fa-twitter{
     color: #ffcc00;
 }
-#Footer .container .FooterRow .FooterBoxOne .social .fa-linkedin-in{
+#Footer .container .FooterRow .FooterBoxOne .social .fa-telegram{
     color: #ffcc00;
 }
 #Footer .container .FooterRow .FooterBoxOne .social .fa-instagram{
@@ -1467,124 +1417,16 @@ font-size: 20px;
 #Footer .container .FooterRow .FooterBoxOne .social .fa-youtube{
     color: #ffcc00;
 }
-#Footer .container .FooterRow .FooterBoxTwo{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 300px;
-    width: 100%;
-    height: 260px;
-    color: #bababa;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#Footer .container .FooterRow  h3{
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: white;
-    margin-bottom: 20px;
-
-}
-#Footer .container .FooterRow .FooterBoxTwo .link{
-    width: 100%;
-}
-#Footer .container .FooterRow .FooterBoxTwo .link ul{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#Footer .container .FooterRow .FooterBoxTwo ul li{
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
-    padding: 10px 0 5px 0;
-    list-style: none;
-}
-#Footer .container .FooterRow .FooterBoxTwo ul li a{
-    font-size: 15px;
-    color: #bababa;
-    transition: .35s;
-}
-#Footer .container .FooterRow .FooterBoxTwo ul li a .fa-chevron-right{
-    font-size: 10px;
-    margin-right: 5px;
-}
-#Footer .container .FooterRow .FooterBoxTwo ul li a:hover{
-    color: #ffcc00;
-    text-decoration: none;
-    margin-left: 10px;
-}
-#Footer .container .FooterRow .FooterBoxThree{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 300px;
-    width: 100%;
-    height: 260px;
-    color: #bababa;
-    margin-right: 20px;
-    padding-bottom: 50px;
-}
-#Footer .container .FooterRow .FooterBoxThree img{
-    max-width: 65px;
-    width: 100%;
-    height: 65px;
-}
-#Footer .container .FooterRow .FooterBoxThree .news{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-}
-#Footer .container .FooterRow .FooterBoxThree .newsOne{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#Footer .container .FooterRow .FooterBoxThree .newsTwo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#Footer .container .FooterRow .FooterBoxThree .text{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
-#Footer .container .FooterRow .FooterBoxThree .text a{
-    font-weight: 600;
-    padding: 0 10px;
-    text-align: left;
-    color: #bababa;
-    transition: .35s;
-}
-#Footer .container .FooterRow .FooterBoxThree .text a:hover{
-    color: #ffcc00;
-    text-decoration: none;
-}
-#Footer .container .FooterRow .FooterBoxThree .text span{
-    font-size: 12px;
-    color: #c0c0c0;
-    padding: 0 10px;
-    width: 100%;
-    text-align: left;
-}
 #Footer .container .FooterRow .FooterBoxFour{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 300px;
+    max-width: 320px;
     width: 100%;
-    height: 260px;
+    height: auto;
     color: #bababa;
+    padding-top: 30px;
 }
 #Footer .container .FooterRow .FooterBoxFour .title p{
     font-size: 15px;
@@ -1605,20 +1447,13 @@ font-size: 20px;
     list-style: none;
     font-size: 15px;
     text-align: center;
+    margin-top: 10px;
 }
 #Footer .container .FooterRow .FooterBoxFour .contact .fa-map-marker-alt{
     font-size: 13px;
     margin-right: 15px;
 }
 #Footer .container .FooterRow .FooterBoxFour .contact .fa-phone-alt{
-    font-size: 13px;
-    margin-right: 15px;
-}
-#Footer .container .FooterRow .FooterBoxFour .contact .fa-print{
-    font-size: 13px;
-    margin-right: 15px;
-}
-#Footer .container .FooterRow .FooterBoxFour .contact .fa-envelope{
     font-size: 13px;
     margin-right: 15px;
 }
@@ -1654,6 +1489,7 @@ font-size: 20px;
 }
 #AboutUs .container .AboutUsTitle ul li{
     list-style: none;
+    text-align: center;
 }
 #AboutUs .container .AboutUsTitle ul li:nth-child(1) a{
     font-size: 12px;
@@ -1690,6 +1526,7 @@ font-size: 20px;
     margin-top: 70px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockOne{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1698,9 +1535,10 @@ font-size: 20px;
     width: 100%;
     height: auto;
     background: #f4f4f4;
-    padding: 0 40px 10px;
+    padding: 81px 40px 20px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockTwo{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1709,9 +1547,10 @@ font-size: 20px;
     width: 100%;
     height: auto;
     background: #f4f4f4;
-    padding: 0 40px 10px;
+    padding: 60px 40px 20px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockThree{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1720,9 +1559,10 @@ font-size: 20px;
     width: 100%;
     height: auto;
     background: #f4f4f4;
-    padding: 0 40px 10px;
+    padding: 60px 40px 20px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockFour{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1731,9 +1571,10 @@ font-size: 20px;
     width: 100%;
     height: auto;
     background: #f4f4f4;
-    padding: 0 40px 10px;
+    padding: 81px 40px 20px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockOne  .icon{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1742,10 +1583,11 @@ font-size: 20px;
     height: 100px;
     background: #009cff;
     border-radius: 100%;
-    transform: translateY(-55px);
     transition: all .24s;
+    top: -50px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockTwo  .icon{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1754,10 +1596,11 @@ font-size: 20px;
     height: 100px;
     background: #046bac;
     border-radius: 100%;
-    transform: translateY(-55px);
     transition: all .24s;
+    top: -50px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockThree  .icon{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1766,10 +1609,11 @@ font-size: 20px;
     height: 100px;
     background-color: #673ab7;
     border-radius: 100%;
-    transform: translateY(-55px);
     transition: all .24s;
+    top: -50px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockFour  .icon{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1778,8 +1622,8 @@ font-size: 20px;
     height: 100px;
     background-color: #ff5722;
     border-radius: 100%;
-    transform: translateY(-55px);
     transition: all .24s;
+    top: -50px;
 }
 #AboutChoose .AboutChooseRow .chooseBlockOne:hover .icon{
     background: #333;
@@ -1810,7 +1654,7 @@ font-size: 20px;
     color: white;
 }
 #AboutChoose .AboutChooseRow h4{
-    font-size: 17px;
+    font-size: 18px;
     margin-bottom: 20px;
     font-weight: 400;
     text-align: center;
@@ -1818,6 +1662,7 @@ font-size: 20px;
 }
 #AboutChoose .AboutChooseRow p{
     text-align: center;
+    font-size: 15px;
 }
 #Company{
     margin-bottom: 60px;

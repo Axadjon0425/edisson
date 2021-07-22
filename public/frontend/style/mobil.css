@@ -194,7 +194,7 @@
         height: auto;
     }
     #AboutUs .container .AboutUsTitle ul{
-        width: 15%;
+        width: 20%;
     }
     #AboutUs{
         margin-top: 100px;
@@ -589,7 +589,7 @@
 }
 @media(max-width:767px){
     #AboutUs .container .AboutUsTitle ul{
-        width: 25%;
+        width: 35%;
     }
 }
 @media(max-width:765px){
@@ -608,22 +608,22 @@
 }
 @media(max-width:600px){
     #Featured .container .featuredRow .featuredBlockOne{
-        height: auto;     
+        height: 300px;    
 } 
     #Featured .container .featuredRow .featuredBlockTwo{
-        height: auto;     
+        height: 300px;     
     }
     #Featured .container .featuredRow .featuredBlockThree{
-        height: auto;     
+        height: 300px;     
     }
     #Featured .container .featuredRow .featuredBlockFour{
-        height: auto;     
+        height: 300px;     
     }
     #Featured .container .featuredRow .featuredBlockFive{
-        height: auto;     
+        height: 300px;     
     }
     #Featured .container .featuredRow .featuredBlockSix{
-        height: auto;     
+        height: 300px;    
     }
     #caruselTwo .caruselTwo{
         max-width: 400px;
@@ -699,7 +699,7 @@
 }
 @media(max-width:458px){
     #AboutUs .container .AboutUsTitle ul{
-        width: 30%;
+        width: 35%;
     }
 }
 @media(max-width:440px){
@@ -722,7 +722,7 @@
 }
 @media(max-width:390px){
     #AboutUs .container .AboutUsTitle ul{
-        width: 40%;
+        width: 45%;
     }
 }
 @media(max-width:360px){
@@ -869,7 +869,7 @@
 }
 @media(max-width:309px){
     #AboutUs .container .AboutUsTitle ul{
-        width: 50%;
+        width: 55%;
     }
 }
 @media(max-width:300px){
@@ -955,7 +955,7 @@
        font-size: 22px;
     }
     #AboutUs .container .AboutUsTitle ul{
-        width: 60%;
+        width: 70%;
     }
 }
 @media(max-width:250px){
@@ -1029,7 +1029,7 @@
         transform: translateY(50px);
     }
     #AboutUs .container .AboutUsTitle ul{
-        width: 70%;
+        width: 80%;
     }
 }
 @media(max-width:225px){
@@ -1156,7 +1156,7 @@
 }
 @media(max-width:202px){
     #AboutUs .container .AboutUsTitle ul{
-        width: 80%;
+        width: 90%;
     }
 }
 @media(max-width:200px){

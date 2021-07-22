@@ -4,11 +4,11 @@
        <div class="container-fluid" id="AboutUs" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
         <div class="container">
             <div class="AboutUsTitle">
-                <h1>Our Team</h1>
+                <h1>Bizning jamoamiz</h1>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{ route('index') }}">Bosh sahifa</a></li>
                     <li><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
-                    <li>Our Team</li>
+                    <li>Bizning jamoamiz</li>
                 </ul>
             </div>
         </div>

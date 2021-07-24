@@ -103,6 +103,9 @@
                         <ul class="OurServices_NavUl">
                             <li class="filter active" data-filter="All">Barchasi</li>
                             <li class="filter" data-filter="Kompyuter">Kompyuter</li> 
+                            <li class="filter" data-filter="Printer">Printer</li> 
+                            <li class="filter" data-filter="Tarmoq">Tarmoq</li>
+                            <li class="filter" data-filter="Tizim">Tizim</li>
                         </ul>
                     </div>
                     <div class="OurServices_Row">

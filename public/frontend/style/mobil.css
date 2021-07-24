@@ -589,7 +589,7 @@
 }
 @media(max-width:767px){
     #AboutUs .container .AboutUsTitle ul{
-        width: 35%;
+        width: 40%;
     }
 }
 @media(max-width:765px){
@@ -598,6 +598,9 @@
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
+    }
+    #AboutUs .container .AboutUsTitle h1{
+        text-align: center;
     }
 }
 @media(max-width:700px){
@@ -628,6 +631,9 @@
     #caruselTwo .caruselTwo{
         max-width: 400px;
         width: 100%;
+    }
+    #AboutUs .container .AboutUsTitle ul{
+        width: 60%;
     }
 }
 @media(max-width:560px){
@@ -697,11 +703,6 @@
         width: 50%;
     }
 }
-@media(max-width:458px){
-    #AboutUs .container .AboutUsTitle ul{
-        width: 35%;
-    }
-}
 @media(max-width:440px){
     #MultiBrand .container .MultiBrandRow .MultiBrandBlock_One h3:nth-child(2) {
         font-size: 38px;
@@ -720,9 +721,9 @@
         opacity: .9;
     }
 }
-@media(max-width:390px){
-    #AboutUs .container .AboutUsTitle ul{
-        width: 45%;
+@media(max-width:400px){
+    #AboutUs .container .AboutUsTitle ul {
+        width: 70%;
     }
 }
 @media(max-width:360px){
@@ -755,6 +756,9 @@
     }
     #Featured .container .featuredRow .featuredBlockSix .div{
         padding: 20px 0 0 30px;
+    }
+    #AboutUs .container .AboutUsTitle ul {
+        width: 80%;
     }
 
 }
@@ -869,7 +873,7 @@
 }
 @media(max-width:309px){
     #AboutUs .container .AboutUsTitle ul{
-        width: 55%;
+        width: 90%;
     }
 }
 @media(max-width:300px){
@@ -955,7 +959,7 @@
        font-size: 22px;
     }
     #AboutUs .container .AboutUsTitle ul{
-        width: 70%;
+        width: 100%;
     }
 }
 @media(max-width:250px){
@@ -1264,6 +1268,9 @@
     }
     #AboutUs .container .AboutUsTitle ul li{
         text-align: center;
+        font-size: 10px;
+    }
+    #AboutUs .container .AboutUsTitle ul li:nth-child(1) a{
         font-size: 10px;
     }
 }

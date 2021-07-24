@@ -4,11 +4,11 @@
     <div class="container-fluid" id="AboutUs" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
         <div class="container">
             <div class="AboutUsTitle">
-                <h1>Contact Us</h1>
+                <h1>Biz bilan bog'lanish</h1>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Bosh sahifa</a></li>
                     <li><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
-                    <li>Contact Us</li>
+                    <li>Biz bilan bog'lanish</li>
                 </ul>
             </div>
         </div>
@@ -26,17 +26,17 @@
         <div class="container">
             <div class="ContactRow">
                 <div class="ContactForm">
-                    <h3>Send Us a Message</h3>
+                    <h3>Bizga xabar yuboring</h3>
                     <form action="">
-                        <input type="text" placeholder="Your Full Name*">
-                        <input type="email" name="" id="" placeholder="Your Email*">
-                        <input type="text" placeholder="Subject">
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
-                        <input type="submit" value="Send Message" class="btn btn-primary"> 
+                        <input type="text" placeholder="To'liq ismingiz*">
+                        <input type="email" name="" id="" placeholder="Sizning elektron manzilingiz*">
+                        <input type="text" placeholder="Mavzu">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Xabar"></textarea>
+                        <input type="submit" value="Xabar yuboring" class="btn btn-primary"> 
                     </form>
                 </div>
                 <div class="ContactInfo">
-                    <h3>Contact Info</h3>
+                    <h3>Aloqa haqida ma'lumot</h3>
                     <p>Varius porttitor ullamcorper mattis ultricies hymenaeos arcu lorem viverra quisque vivamus cubilia ipsum augue sodales habitant gravida consequat, pede arcu, mauris. Lobortis non dictumst tempus blandit consectetuer venenatis mollis quis nibh ultrices diam quisque magnis .</p>
                     <ul>
                         <li><span>location</span>No.320, Fifth Avenue New York, NY 90210</li>

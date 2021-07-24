@@ -5,11 +5,11 @@
  <div class="container-fluid" id="AboutUs" v-on:mouseover="toggleOff" v-on:click="searchActiveOff" style="margin-bottom: 100px;">
     <div class="container">
         <div class="AboutUsTitle">
-            <h1>Our Services</h1>
+            <h1>Bizning xizmatlarimiz</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Bosh sahifa</a></li>
                 <li><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
-                <li>Our Services</li>
+                <li>Bizning xizmatlarimiz</li>
             </ul>
         </div>
     </div>

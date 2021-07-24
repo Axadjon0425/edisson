@@ -39,10 +39,10 @@
                     <h3>Aloqa haqida ma'lumot</h3>
                     <p>Varius porttitor ullamcorper mattis ultricies hymenaeos arcu lorem viverra quisque vivamus cubilia ipsum augue sodales habitant gravida consequat, pede arcu, mauris. Lobortis non dictumst tempus blandit consectetuer venenatis mollis quis nibh ultrices diam quisque magnis .</p>
                     <ul>
-                        <li><span>location</span>No.320, Fifth Avenue New York, NY 90210</li>
-                        <li><span>PHONE</span>(123) 456-7890</li>
-                        <li><span>Fax</span>(123) 456-7890</li>
-                        <li><span>Email</span>info@yourdin.com </li>
+                        <li><span>Manzil</span>Qo'qon shaxar, Alisher Navoiy ko'chasi, 113-uy.</li>
+                        <li><span>Telefon</span>+998972087090</li>
+                        <li><span>Faks</span>+998972087090</li>
+                        <li><span>Elektron pochta</span>EdissonKokand@gmail.com</li>
                     </ul>
                 </div>
             </div>

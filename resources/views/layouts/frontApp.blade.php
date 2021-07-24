@@ -165,7 +165,7 @@
                             <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="https://t.me/edisson_kokand"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
                             <li><a href="https://www.instagram.com/edisson_kokand/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCUsvdhAWi-tYVcMCL8e2IBg"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -175,8 +175,9 @@
                     </div>
                     <div class="contact">
                         <ul>
-                            <li><i class="fas fa-map-marker-alt"></i>   No.320, Fifth Avenue New York,br NY 90210</li>
-                            <li><i class="fas fa-phone-alt"></i>  (123) 456-7890</li>
+                            <li><i class="fas fa-map-marker-alt"></i>Qo'qon shaxar, Alisher Navoiy ko'chasi, 113-uy.</li>
+                            <li><i class="fas fa-phone-alt"></i>
+                            <a href="tel:+998972087090">+998972087090</a></li>
                         </ul>
                     </div>
                 </div>

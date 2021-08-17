@@ -800,7 +800,7 @@ font-size: 20px;
 
 #OurServices .container .OurServices_Row{
     display: flex !important;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -2022,6 +2022,9 @@ font-size: 20px;
     flex-direction: column;
     align-items: flex-start;
 }
+#contact .container .ContactRow .ContactForm form label{
+    font-family: 'Montserrat', sans-serif;
+}
 #contact .container .ContactRow .ContactForm form input{
     width: 100%;
     height: 45px;
@@ -2093,6 +2096,45 @@ font-size: 20px;
     text-transform: uppercase;
     margin-right: 20px;
 }
+#contact .ShopBuy{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact .ShopBuy img{
+  
+    width: 100%;
+} 
+#contact .ShopBuy .block{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  padding: 0px 0 30px 15px;
+
+}
+#contact .ShopBuy .block h1{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+#contact .ShopBuy .block span{
+    font-family: 'Montserrat', sans-serif;
+}
+#contact .ShopBuy .block p{
+    font-family: 'Montserrat', sans-serif;
+}
+#contact .ShopBuy .block .text{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#contact .ShopBuy .block hr{
+    width: 100%;
+}
 #LearnMore{
     position: relative;
 }
@@ -2146,3 +2188,57 @@ font-size: 20px;
     text-decoration: none;
     background: #333;
 }
+
+.success{
+    display: none;
+}
+.success2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    visibility: visible;
+    transition: all .5s;
+}
+.notice-success-multiple  {
+	background:#67b11c;
+	padding:5px 10px 5px 10px;
+	border:2px solid rgba(0,153,0,1);
+	border-radius:5px;
+	color:#fff;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:700;
+	width:400px;	
+    z-index: 1111;
+}
+.notice-success,
+.notice-success-gradient {
+   position:relative;
+}
+.notice-success p ,
+.notice-success-gradient p,
+.notice-success-multiple p {
+	padding-left:35px;
+}
+
+.notice-success img ,
+.notice-success-gradient img {
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:12px;
+	left:10px;
+	
+}
+.notice-success-gradient {
+  background:linear-gradient(#67b11c,#437015);
+}
+.notice-success-multiple {
+ background: url("https://upload.wikimedia.org/wikipedia/commons/d/d2/Pictogram_voting_keep-light-green.svg") 20px 50% no-repeat, linear-gradient(#72c41f, #5c9e19);
+  background: url("https://upload.wikimedia.org/wikipedia/commons/d/d2/Pictogram_voting_keep-light-green.svg") 20px 50% no-repeat, linear-gradient(#72c41f, #5c9e19);
+}
+
+	

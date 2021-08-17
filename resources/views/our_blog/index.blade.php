@@ -9,7 +9,7 @@
         <a href="{{ route('ourBlog.add') }}" class="btn btn-outline-primary"  ><i class="far fa-plus"></i> Add</a>
     
         
-        <table id="dataTable_staff" class="table table-striped" style="width:100%;">
+        <table  class="table table-striped dataTable_staff" style="width:100%;">
             <thead>
                 <tr>
                     <th>№</th>
@@ -33,7 +33,14 @@
                     </td>
                     <td class="align-middle">{{ $p->created_at }}</td>
                     <td class="align-middle text-right">
+                      <div class="btn-group">
+
                         <a href="{{ route('ourBlog.edit', [$p->id]) }}" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
+                        <button type="submit" class="btn btn-outline-danger"data-toggle="modal" data-target="#modalDelet{{ $p->id }}">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                        
+                      </div>
                         <!--===========================DeletModal========================-->
                         <div class="modal fade" id="modalDelet{{ $p->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -61,9 +68,6 @@
                             </div>
                           </div>
                          
-                        <button type="submit" class="btn btn-outline-danger"data-toggle="modal" data-target="#modalDelet{{ $p->id }}">
-                            <i class="far fa-trash-alt"></i>
-                        </button>
                           
                     </td>
                     

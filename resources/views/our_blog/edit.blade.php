@@ -31,7 +31,7 @@
       
       
                       <div class="form-group">
-                        <label for="rasm">Rasm</label>
+                        <label for="photo">Rasm</label>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" id="rasm" name="photo" value="{{ old('photo') }}">
                                 <label class="custom-file-label" for="rasm">{{ $ourBlog->photo }}</label>

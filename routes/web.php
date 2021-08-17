@@ -8,6 +8,9 @@ use App\Http\Controllers\ServiceLearnMoreController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\OurBlogController;
 use App\Http\Controllers\GuestController;
+use App\Http\Controllers\ShopController;
+use App\Http\Controllers\shopBuyController;
+use App\Http\Controllers\ShopUserController;
 use App\Models\Service;
 
 /*
@@ -44,6 +47,8 @@ Route::get('/contactUs', [GuestController::class, 'contactUs'])->name('contactUs
 Route::get('/clients', [GuestController::class, 'client'])->name('client');
 
 Route::get('/OurBlogs', [GuestController::class, 'OurBlog'])->name('OurBlog');
+
+Route::get('/shop', [GuestController::class, 'shop'])->name('shop');
 
 /**======================================== Guest =====================================**/
 
@@ -114,5 +119,21 @@ Route::put('our_blog/edit/{id}/update', [OurBlogController::class, 'update'])->n
 Route::delete('our_blog/destroy/{id}', [OurBlogController::class, 'destroy'])->name('ourBlog.destroy');
 
 /**======================================== Our blog =====================================**/
+
+
+
+/**====================================== Shop =====================================**/
+
+Route::resource('shopAdmin', ShopController::class);
+
+Route::get('/shop_user', [ShopUserController::class, 'index'])->name('shopuser.index');
+
+Route::post('shopUser/store', [ShopUserController::class, 'store'])->name('shopUser.store');
+
+Route::get('shop_user/orderStatusUpdate/{id}', [ShopUserController::class, 'orderStatusUpdate'])->name('shopUser.orderStatusUpdate');
+
+Route::get('shop_buy/{id}', [shopBuyController::class, 'index'])->name('shopBuy');
+
+/**======================================  Shop =====================================**/
 
 

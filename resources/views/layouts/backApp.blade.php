@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Almirab</title>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('public/css/all.css')}}">
     <link rel="stylesheet" href="{{asset('DataTables/table/table.css')}}">
@@ -64,6 +64,20 @@
                 <svg class="c-sidebar-nav-icon">
                     <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-people')}}"></use>
                 </svg> Bizning Blog
+            </a>
+        </li>
+        <li class="c-sidebar-nav-item  @if(Request::segment(1) == 'shopAdmin') {{ 'active' }} @endif">
+            <a class="c-sidebar-nav-link" href="{{ route('shopAdmin.index') }}">
+                <svg class="c-sidebar-nav-icon">
+                    <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-cart')}}"></use>
+                </svg> Do'kon
+            </a>
+        </li>
+        <li class="c-sidebar-nav-item  @if(Request::segment(1) == 'shopuser') {{ 'active' }} @endif">
+            <a class="c-sidebar-nav-link" href="{{ route('shopuser.index') }}">
+                <svg class="c-sidebar-nav-icon">
+                    <use xlink:href="{{asset('public/icons/sprites/free.svg#cil-cart')}}"></use>
+                </svg> Do'kon mijozlar
             </a>
         </li>
     </ul>
@@ -130,6 +144,25 @@
 
 
 <script src="{{asset('DataTables/table/jQurey.js')}}"></script>
+<script>
+    $('.dataTable_staff').DataTable({
+        paging: false,
+        pageLength: 100,
+        lengthChange: true,
+        searching: true,
+        ordering: true,
+        info: false,
+        autoWidth: false,
+        language: {
+        search: "",
+        searchPlaceholder: " Izlash...",
+        sLengthMenu: "Кўриш _MENU_ тадан",
+        sInfo: "Ko'rish _START_ dan _END_ gacha _TOTAL_ jami",
+        emptyTable: "Ma'lumot mavjud emas",
+        }
+    });
+
+</script>
 <script src="{{asset('js/coreui.bundle.min.js')}}"></script>
 <!--[if IE]><!-->
 <script src="{{asset('js/svgxuse.min.js')}}"></script>

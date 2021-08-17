@@ -1,7 +1,7 @@
 @extends('layouts.frontApp')
 @section('content')
     <!--=============================Contact Us================================-->
-    <div class="container-fluid" id="AboutUs" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+    <div class="container-fluid" id="AboutUs">
         <div class="container">
             <div class="AboutUsTitle">
                 <h1>Biz bilan bog'lanish</h1>
@@ -14,7 +14,7 @@
         </div>
     </div>
     <!--==============================Google Map================================-->
-    <div class="container-fluid" id="GoogleMap" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+    <div class="container-fluid" id="GoogleMap">
 
         <iframe class="Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.2128389125755!2d70.95985281476665!3d40.536886656247965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38baef867427e2c1%3A0xaa5d8bbb9bee93!2sLife%20Tech!5e0!3m2!1sen!2s!4v1624855764742!5m2!1sen!2s"
@@ -22,7 +22,7 @@
 
     </div>
     <!--==============================Conatct==================================-->
-    <div class="container-fluid" id="contact" v-on:mouseover="toggleOff" v-on:click="searchActiveOff">
+    <div class="container-fluid" id="contact">
         <div class="container">
             <div class="ContactRow">
                 <div class="ContactForm">

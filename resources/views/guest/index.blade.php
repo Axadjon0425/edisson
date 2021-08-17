@@ -245,32 +245,27 @@
             <div class="container-fluid" id="caruselTwo">
                 <div class="caruselTwo">
                     <div class="box">
-                        <img src="{{ asset('frontend/images/client-01.jpg') }}" alt="img">
+                        <img src="{{ asset('frontend/images/Almirab logo.png') }}" alt="img">
                     </div>
                     <div class="box">
-                        <img src="{{ asset('frontend/images/client-02.jpg') }}" alt="img">
+                        <img src="{{ asset('frontend/images/Aroba logo.png') }}" alt="img">
                     </div>
                     <div class="box">
-                        <img src="{{ asset('frontend/images/client-04.jpg') }}" alt="img">
+                        <img src="{{ asset('frontend/images/Chittak logo.png') }}" alt="img">
                     </div>
                     <div class="box">
-                        <img src="{{ asset('frontend/images/client-06.jpg') }}" alt="img">
+                        <img src="{{ asset('frontend/images/Life tech logo.png') }}" alt="img">
                     </div>
                     <div class="box">
-                        <img src="{{ asset('frontend/images/client-08.jpg') }}" alt="img">
+                        <img src="{{ asset('frontend/images/SAG logo.png') }}" alt="img">
                     </div>
                     <div class="box">
-                        <img src="https://iwebdc.com/demo/ostrya/wp-content/uploads/2016/11/client-10.jpg" alt="img">
+                        <img src="{{ asset('frontend/images/edisson3.png') }}" alt="img">
                     </div>
                     <div class="box">
-                        <img src="{{ asset('frontend/images/client-04.jpg') }}" alt="img">
+                        <img src="{{ asset('frontend/images/Life tech logo.png') }}" alt="img">
                     </div>
-                    <div class="box">
-                        <img src="{{ asset('frontend/images/client-06.jpg') }}" alt="img">
-                    </div>
-                    <div class="box">
-                        <img src="{{ asset('frontend/images/client-08.jpg') }}" alt="img">
-                    </div>
+
                 </div>
             </div>
             <!--========================Multi Brand============================-->

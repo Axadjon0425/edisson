@@ -2,11 +2,10 @@
 
 @section('content')
    
-<div class="container-fluid" style="">
-    
+<div class="container-fluid">
     <div class="table-btn">
-       <h1 class="text-center">Xizmatlar</h1>
-        <a href="{{ route('service.add') }}" class="btn btn-outline-primary" ><i class="far fa-plus"></i> Add</a>
+       <h1 class="text-center">Do'kon</h1>
+        <a href="{{ route('shopAdmin.create') }}" class="btn btn-outline-primary"  style="z-index: 1;"><i class="far fa-plus"></i> Add</a>
     
         
         <table  class="table table-striped dataTable_staff" style="width:100%;">
@@ -15,33 +14,33 @@
                     <th>№</th>
                     <th>Nomi</th>
                     <th>Matn</th>
-                    <th>Tipi</th>
-                    <th>Sana</th>
+                    <th>Narxi</th>
                     <th>photo</th>
+                    <th>Sana</th>
                     <th class="text-right">Harakatlar</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($service as $p)
+                @foreach ($shop as $p)
                 <tr>
                     <td class="align-middle">{{ ($loop->index+1)}}</td>
                     <td class="align-middle">{{ $p->name }}</td>
-                    <td class="align-middle">{{ $p->description }}</td>
-                    <td class="align-middle">{{ $p->type }}</td>
-                    <td class="align-middle">{{ $p->created_at }}</td>
+                    <td class="align-middle">{{ $p->text }}</td>
+                    <td class="align-middle">{{ $p->price." so'm" }}</td>
                     <td class="align-middle">
-                      <a href="{{asset('upload/services/'.$p->photo)}}" data-fancybox="gallery">
-                        <img src="{{asset('upload/services/'.$p->photo)}}" alt="" style="width: 100px; height: 80px;">
+                      <a href="{{asset('upload/shop/'.$p->photo)}}" data-fancybox="gallery">
+                        <img src="{{asset('upload/shop/'.$p->photo)}}" alt="" style="width: 100px; height: 80px;">
                         
                       </a>
                     </td>
+                    <td class="align-middle">{{ $p->created_date }}</td>
                     <td class="text-right align-middle">
-                      <div class="btn-group" role="group" >
-                        <a href="{{ route('service.edit', [$p->id]) }}" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
+                      <div class="btn-group">
+
+                        <a href="{{ route('shopAdmin.edit', ['shopAdmin' => $p->id]) }}" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
                         <button type="submit" class="btn btn-outline-danger"data-toggle="modal" data-target="#modalDelete{{ $p->id }}">
                             <i class="far fa-trash-alt"></i>
                         </button>
-
                       </div>
                         <!--===========================DeletModal========================-->
                         <div class="modal fade" id="modalDelete{{ $p->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -56,7 +55,7 @@
                               </div>
                               <div class="modal-body">
                                 <p class="text-danger text-left">Maʼlumotni rostdan ochirmoqchimiz?</p>
-                                  <form action="{{ route('service.destroy', [$p->id] ) }}" method="POST">                           
+                                  <form action="{{ route('shopAdmin.destroy', ['shopAdmin' => $p->id] ) }}" method="POST">                           
                                       @csrf
                                       {{ method_field('DELETE') }}
                                       <div class="" style="border: none">

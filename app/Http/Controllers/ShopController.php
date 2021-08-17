@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\OurBlog;
+use App\Models\shop;
 use Illuminate\Http\Request;
 
-class OurBlogController extends Controller
+class ShopController extends Controller
 {
     public function __construct()
     {
@@ -18,9 +17,9 @@ class OurBlogController extends Controller
      */
     public function index()
     {
-        $ourBlog = OurBlog::all();
+        $shop = shop::all();
 
-        return view('our_blog.index', compact('ourBlog'));
+        return view('shopAdmin.index  ', compact('shop'));
     }
 
     /**
@@ -30,7 +29,8 @@ class OurBlogController extends Controller
      */
     public function create()
     {
-        return view('our_blog.add');
+        $shop = shop::all();
+        return view('shopAdmin.add', compact('shop'));
     }
 
     /**
@@ -41,27 +41,30 @@ class OurBlogController extends Controller
      */
     public function store(Request $request)
     {
-        $ourBlog = OurBlog::all();
+        $shop = shop::all();
 
         $data = $request->validate([
             'name' => 'required',
             'text' => 'required',
+            'price' => 'required|numeric',
             'photo' => 'required|image|mimes:jpeg,png,jpg'
         ]);
-        $img = $request->file('photo');
-        $img_name = rand().'.'.$img->getClientOriginalExtension();
-        $img->move(public_path('upload/our_blog/'), $img_name);
+        
+        $image = $request->file('photo');
+        $image_name = rand().'.'.$image->getClientOriginalExtension();
+        $image->move(public_path('upload/shop/'), $image_name);
 
-        try {
-            OurBlog::create([
+        try{
+            shop::create([
                 'name' => $request->name,
-                'text'=> $request->text,
-                'photo' => $img_name
+                'text' => $request->text,
+                'price' => $request->price,
+                'photo' => $image_name
             ]);
 
-            return redirect()->route('ourBlog.index');
+            return redirect()->route('shopAdmin.index');
 
-        } catch (\Exception $exception) {
+        }catch(\Exception $exception){
             return $exception;
         }
     }
@@ -85,8 +88,8 @@ class OurBlogController extends Controller
      */
     public function edit($id)
     {
-        $ourBlog = OurBlog::findOrFail($id);
-        return view('our_blog.edit', compact('ourBlog'));
+        $shop = shop::findOrFail($id);
+        return view('shopAdmin.edit', compact('shop'));
     }
 
     /**
@@ -96,41 +99,41 @@ class OurBlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $shopAdmin)
     {
-          $img_name = $request->photo_hidden;
-          $img = $request->file('photo');
-    
-          if($img) {
+        $image_name = $request->photo_hidden;
+        $img = $request->file('photo');
+
+        if ($img) {
             $data = $request->validate([
                 'name' => 'required',
                 'text' => 'required',
+                'price' => 'numeric|min:4',
                 'photo' => 'required|image|mimes:jpeg,png,jpg'
             ]);
-            unlink('upload/our_blog/'.$img_name);
-            $img_name = rand().'.'.$img->getClientOriginalExtension();
-            $img->move(public_path('upload/our_blog/'), $img_name);
-           
-          }
-          else {
+            unlink('upload/shop/'.$image_name);
+            $image_name = rand().'.'.$img->getClientOriginalExtension();
+            $img->move(public_path('upload/shop/'), $image_name);
+
+        }else{
             $data = $request->validate([
-                'name' => 'required',
-                'text' => 'required'
+                'name'  => 'required',
+                'text' => 'required',
+                'price' => 'numeric|min:4'
             ]);
-          }
-    
-          if($data) {
+        }
+
+        if ($data) {
             $form_data = array(
                 'name'  => $request->name,
-                'text'  => $request->text,
-                'photo' => $img_name
+                'text' => $request->text,
+                'price' => $request->price,
+                'photo' => $image_name
             );
-    
-            OurBlog::whereId($request->id)->update($form_data);
-    
-            return redirect()->route('ourBlog.index');
-          }
-    
+
+            shop::whereId($shopAdmin)->update($form_data);
+            return redirect()->route('shopAdmin.index');
+        }
     }
 
     /**
@@ -139,16 +142,16 @@ class OurBlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($shopAdmin)
     {
-        $ourBlog = OurBlog::findOrFail($id);
+        $shop = shop::findOrFail($shopAdmin);
 
-        $image_path = public_path()."upload/our_blog/".$ourBlog->photo;
+        $image_path = public_path()."upload/shop/".$shop->photo;
         if (file_exists($image_path)) {
             unlink($image_path);
         }
 
-        $ourBlog->delete();
-        return redirect()->route('ourBlog.index');
+        $shop->delete();
+        return redirect()->route('shopAdmin.index');
     }
 }

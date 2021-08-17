@@ -102,6 +102,9 @@
         flex-wrap: wrap;
         padding: 0 20px 0 20px;
     }
+    #contact .ShopBuy{
+        flex-direction: column;
+    }
 }
 @media(max-width:1090px){
     #AboutChoose .AboutChooseRow {
@@ -739,23 +742,63 @@
     .carusel h1{
         font-size: 30px;
     }
+    #Featured .container .featuredRow img{
+        position: relative;
+    }
+    #Featured .container .featuredRow .featuredBlockOne{
+        height: auto;     
+} 
+    #Featured .container .featuredRow .featuredBlockTwo{
+        height: auto;     
+    }
+    #Featured .container .featuredRow .featuredBlockThree{
+        height: auto;     
+    }
+    #Featured .container .featuredRow .featuredBlockFour{
+        height: auto;     
+    }
+    #Featured .container .featuredRow .featuredBlockFive{
+        height: auto;     
+    }
+    #Featured .container .featuredRow .featuredBlockSix{
+        height: auto;     
+    }
+   
     #Featured .container .featuredRow .featuredBlockOne .div{
-        padding: 20px 0 0 30px;
+        padding: 0;
+        left: 0;
+        height: auto;
+        padding: 10px 0 0 20px;
     }
     #Featured .container .featuredRow .featuredBlockTwo .div{
-        padding: 20px 0 0 30px;
+        padding: 0;
+        left: 0;
+        height: auto;
+        padding: 10px 0 0 20px;
     }
     #Featured .container .featuredRow .featuredBlockThree .div{
-        padding: 20px 0 0 30px;
+        padding: 0;
+        left: 0;
+        height: auto;
+        padding: 10px 0 0 20px;
     }
     #Featured .container .featuredRow .featuredBlockFour .div{
-        padding: 20px 0 0 30px;
+        padding: 0;
+        left: 0;
+        height: auto;
+        padding: 10px 0 0 20px;
     }
     #Featured .container .featuredRow .featuredBlockFive .div{
-        padding: 20px 0 0 30px;
+        padding: 0;
+        left: 0;
+        height: auto;
+        padding: 10px 0 0 20px;
     }
     #Featured .container .featuredRow .featuredBlockSix .div{
-        padding: 20px 0 0 30px;
+        padding: 0;
+        left: 0;
+        height: auto;
+        padding: 10px 0 0 20px;
     }
     #AboutUs .container .AboutUsTitle ul {
         width: 80%;
@@ -775,24 +818,7 @@
         max-width: 200px;
         width: 100%;
     }
-    #Featured .container .featuredRow .featuredBlockOne{
-        height: 100px;     
-} 
-    #Featured .container .featuredRow .featuredBlockTwo{
-        height: 100px;     
-    }
-    #Featured .container .featuredRow .featuredBlockThree{
-        height: 100px;     
-    }
-    #Featured .container .featuredRow .featuredBlockFour{
-        height: 100px;     
-    }
-    #Featured .container .featuredRow .featuredBlockFive{
-        height: 100px;     
-    }
-    #Featured .container .featuredRow .featuredBlockSix{
-        height: 100px;     
-    }
+
 }
 @media(max-width:315px){
     #Company .container .companyRow .companyBlockOne h3 {
@@ -896,6 +922,16 @@
 @media(max-width:280px){
     #Footer .container .FooterRow .FooterBoxOne .social ul {
         width: 70%;
+    }
+    #contact .ShopBuy .block h1{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    #contact .ShopBuy .block span{
+        font-size: 15px;
+    }
+    #contact .ShopBuy .block .text{
+        margin-bottom: 10px;
     }
 }
 @media(max-width:276px){

@@ -9,7 +9,7 @@
       <a href="{{ route('client.add') }}" class="btn btn-outline-primary"><i class="far fa-plus"></i> Add</a>
   
       
-      <table id="dataTable_staff" class="table table-striped" style="width:100%;">
+      <table  class="table table-striped dataTable_staff" style="width:100%;">
           <thead>
               <tr>
                   <th>№</th>
@@ -29,9 +29,16 @@
                   <td>{{ $p->company }}</td>
                   <td>{{ $p->created_at }}</td>
                   <td class="text-right">
+                    <div class="btn-group">
+
                       <a href="{{ route('client.edit', [$p->id]) }}" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
+                      <button type="submit" class="btn btn-outline-danger"data-toggle="modal" data-target="#exampleModal{{ $p->id }}">
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                      
+                    </div>
                       <!--===========================DeletModal========================-->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="exampleModal{{ $p->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -42,7 +49,7 @@
                                 </button>
                               </div>
                               <div class="modal-body" >
-                                  <form action="{{ route('client.destroy', [$p->id] ) }}" method="POST">                           
+                                  <form action="{{ route('client.destroy', [$p->id]) }}" method="POST">                           
                                       @csrf
                                       {{ method_field('DELETE') }}
                                       <div class="" style="border: none">
@@ -56,9 +63,7 @@
                           </div>
                         </div>
                        
-                      <button type="submit" class="btn btn-outline-danger"data-toggle="modal" data-target="#exampleModal">
-                          <i class="far fa-trash-alt"></i>
-                      </button>
+                    
                         
                   </td>
                   

@@ -87,15 +87,9 @@ class AdminController extends Controller
 
         if (!$validator->passes())
         {
-            // echo '<pre>';
-            // print_r($validator->errors()->toArray());
-            // echo '</pre>';
-            
             $user = Auth::user();
             $username = $user->username;
-
             $error = $validator->errors()->toArray();
-            // return view('admin.edit', compact('username','error')); 
             return response()->json(['error'=> $error]);
         } 
         else

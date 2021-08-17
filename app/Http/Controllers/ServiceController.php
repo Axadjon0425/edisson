@@ -113,11 +113,11 @@ class ServiceController extends Controller
             'photo' => 'required|image|mimes:jpeg,png,jpg'
         ]);
         unlink('upload/services/'.$img_name);
-        $image = $request->file('photo');
-        $img_name = rand().'.'.$image->getClientOriginalExtension();
-        $image->move(public_path('upload/services/'), $img_name);
+        $img_name = rand().'.'.$img->getClientOriginalExtension();
+        $img->move(public_path('upload/services/'), $img_name);
        
-      }else{
+      }
+      else {
         $data = $request->validate([
             'name'        => 'required',
             'description' => 'required',
@@ -150,6 +150,12 @@ class ServiceController extends Controller
     public function destroy($id)
     {
         $service = Service::findOrFail($id);
+
+        $image_path = public_path()."upload/services/".$service->photo;
+        if (file_exists($image_path)) {
+            unlink($image_path);
+        }
+
         $service->delete();
 
         return redirect()->route('service.index');

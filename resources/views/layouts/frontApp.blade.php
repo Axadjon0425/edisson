@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "{{ asset('frontend/images/favicon_io (1)/favicon-32x32.png') }}" type = "image/x-icon">
     <title>Edisson</title>
     <!-----------------Wow.js--------------------->
     <link rel="stylesheet" href="{{ asset('frontend/style/animate.css') }}">
@@ -36,6 +37,11 @@
     <div class="loader">
         <img src="{{ asset('frontend/images/spinner.gif') }}" alt="Loading..." >
     </div>
+    <div class="success">      
+      <div class="notice-success-multiple">
+            <p>Malumot bazga muvaffaqiyatli jonatildi! Tez orada adminlarimiz siz bilan bog'lanishida</p>
+        </div>
+    </div>
     <!--==============================================Header==============================================-->
     <div class="container-fluid" id="header">
         <div class="container">
@@ -54,7 +60,7 @@
                                 <i class="fas fa-phone-alt"></i>
                                 <div class="header_text">
                                     <small>Biz bilan bog'lanish</small>
-                                    <strong>(99)0067134</strong>
+                                    <strong>+998972087090</strong>
                                 </div>
                             </div>
                             <div class="header_infoRight">
@@ -81,6 +87,7 @@
                         <li><a href="{{ route('ourTeam') }}">Bizning jamoamiz</a></li>
                         <li><a href="{{ route('service') }}">Bizning xizmatlarimiz</a></li>
                         <li><a href="{{ route('project') }}">Loyihalar</a></li>
+                        <li><a href="{{ route('shop') }}">Do'kon</a></li>
                         <li><a href="{{ route('contactUs') }}">Biz bilan bog'lanish</a></li>
                     </ul>
                 </nav>
@@ -122,6 +129,12 @@
                         <li class="@if(Request::segment(1) == 'project') {{ 'active' }} @endif">
 
                             <a href="{{ route('project') }}">Loyihalar</a>
+
+                        </li>
+
+                        <li class="@if(Request::segment(1) == 'shop') {{ 'active' }} @endif">
+
+                            <a href="{{ route('shop') }}">Do'kon</a>
 
                         </li>
 
@@ -224,6 +237,12 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!--Phone=======================-->
+    <script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
+        <script>
+            // $.mask.definitions['~'] = "[+-]";
+            $("#phone").mask("(99) 999 99-99");
+        </script>
     <!--JavaScript=============-->
     <script src="{{ asset('js/function.js') }}"></script>
     <script src="{{ asset('frontend/js/javascript.js') }}"></script>

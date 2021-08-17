@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Service;
 use App\Models\Client;
 use App\Models\OurBlog;
+use App\Models\shop;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -71,7 +72,11 @@ public function OurBlog()
     $ourBlog = OurBlog::all();
     return view('guest.ourBlog', compact('ourBlog'));
 }
-
+public function shop()
+{    
+    $shop = shop::all();
+    return view('guest.shop', compact('shop'));
+}
 }
 
 
